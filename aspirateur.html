@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projet : Aspirateur Robot</title>
+    <title>Portfolio d'Olivier</title>
+    <!-- Import Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Import AOS (Animation on Scroll) -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         body {
@@ -13,13 +15,16 @@
     </style>
 </head>
 <body class="bg-gray-900 text-gray-200">
-
     <!-- Navbar -->
     <header class="bg-gray-800 text-gray-200 fixed w-full z-10 shadow-lg">
         <nav class="max-w-7xl mx-auto p-4 flex justify-between items-center">
-            <h1 class="text-2xl font-bold">Projet : Aspirateur Robot</h1>
+            <h1 class="text-2xl font-bold">Olivier's Projects</h1>
             <ul class="flex space-x-6">
-                <li><a href="#home" class="hover:text-gray-400">Retour à l'accueil</a></li>
+                <li><a href="#aspirateur" class="hover:text-gray-400">Aspirateur</a></li>
+                <li><a href="#barriere" class="hover:text-gray-400">Barrière</a></li>
+                <li><a href="#cuve" class="hover:text-gray-400">Cuve Chauffante</a></li>
+                <li><a href="#robot" class="hover:text-gray-400">Robot</a></li>
+                <li><a href="#competences" class="hover:text-gray-400">Compétences</a></li>
             </ul>
         </nav>
     </header>
@@ -27,50 +32,85 @@
     <!-- Hero Section -->
     <section id="home" class="h-screen bg-gradient-to-br from-gray-800 to-gray-600 text-gray-100 flex items-center justify-center text-center">
         <div data-aos="fade-up">
-            <h2 class="text-4xl md:text-6xl font-bold mb-6">Revamp du Robot Aspirateur</h2>
-            <p class="text-lg md:text-2xl mb-6">Amélioration de la navigation et des fonctionnalités d'un robot autonome de nettoyage.</p>
+            <h2 class="text-5xl md:text-7xl font-bold mb-6">Bienvenue dans mes Projets</h2>
+            <p class="text-lg md:text-2xl mb-6">Explorez mes travaux en automatisation, robotique et plus encore.</p>
+            <a href="#aspirateur" class="bg-gray-700 text-gray-200 py-3 px-8 rounded-full text-lg shadow-lg hover:bg-gray-600 transition-all">Voir mes projets</a>
         </div>
     </section>
 
-    <!-- Description du Projet -->
-    <section class="py-20 bg-gray-900" id="projet-aspirateur">
-        <div class="max-w-7xl mx-auto text-center" data-aos="fade-up">
-            <h2 class="text-3xl font-bold text-gray-100">Présentation du Projet</h2>
-            <p class="text-gray-400 mt-4 mb-12">Voici les principales améliorations du projet de revamp du robot aspirateur.</p>
+    <!-- Section Aspirateur -->
+    <section id="aspirateur" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto text-center mb-8" data-aos="fade-up">
+            <h2 class="text-4xl font-bold text-black mb-4">Aspirateur Robot</h2> <!-- Titre en noir -->
+            <img src="images/aspirateur.jpg" alt="Robot Aspirateur" class="w-full rounded-lg shadow-lg">
         </div>
+        <div class="max-w-5xl mx-auto text-center mb-12" data-aos="fade-right">
+            <p class="text-gray-400 mt-4">Développement d'un robot aspirateur avec gestion du SLAM pour une navigation autonome.</p>
+            <p class="text-gray-400 mt-4">Le robot utilise une technologie de **LiDAR** (Light Detection and Ranging) pour détecter son environnement et créer des cartes 2D ou 3D. Cela lui permet de se déplacer efficacement dans un espace tout en évitant les obstacles. Pour plus d’informations sur la technologie LiDAR, consultez ce lien : <a href="https://fr.wikipedia.org/wiki/Lidar" class="text-blue-400 hover:underline">LiDAR sur Wikipedia</a>.</p>
+            <p class="text-gray-400 mt-4">Il est équipé de **capteurs infrarouges** et d’une **caméra de profondeur** pour une détection optimale des objets. Le système est également capable d’adapter sa vitesse en fonction de la distance aux objets et de choisir la meilleure trajectoire grâce à des algorithmes de navigation basés sur le **SLAM** (Simultaneous Localization and Mapping).</p>
+            <p class="text-gray-400 mt-4">En plus de la gestion du SLAM, le robot est conçu pour être intuitif et facile à utiliser, avec une interface utilisateur permettant de définir des zones à nettoyer et de surveiller l’avancement du nettoyage en temps réel.</p>
+        </div>
+    </section>
 
-        <div class="max-w-5xl mx-auto space-y-10 text-left">
-            <div class="flex items-center space-x-4">
-                <span class="text-3xl">🤖</span>
-                <h3 class="text-2xl font-semibold text-gray-100">Amélioration de la navigation autonome</h3>
-            </div>
-            <p class="text-gray-400">
-                Le robot utilise désormais la technologie de <strong><a href="https://fr.wikipedia.org/wiki/SLAM" class="text-blue-400 hover:underline">SLAM (Simultaneous Localization and Mapping)</a></strong>, qui lui permet de créer une carte en temps réel de son environnement. Grâce à cette cartographie, il peut se repérer de manière précise et naviguer sans heurter les objets, en s'adaptant aux obstacles. Il s'agit d'une avancée majeure dans la capacité du robot à effectuer des tâches de nettoyage autonomes.
-            </p>
+    <!-- Section Barrière -->
+    <section id="barriere" class="py-20 bg-gray-800">
+        <div class="max-w-7xl mx-auto text-center mb-12" data-aos="fade-left">
+            <h2 class="text-4xl font-bold text-gray-100">Projet : Gestion de Barrière</h2>
+            <p class="text-gray-400 mt-4">Automatisation de barrière pour parking, incluant reconnaissance de véhicule et contrôle d'accès.</p>
+            <a href="barriere.html" class="text-blue-400 hover:underline mt-4 block">En savoir plus</a>
+        </div>
+        <div class="max-w-5xl mx-auto text-center" data-aos="fade-up">
+            <img src="images/barriere.jpg" alt="Gestion de Barrière" class="w-full rounded-lg shadow-lg">
+        </div>
+    </section>
 
-            <div class="flex items-center space-x-4">
-                <span class="text-3xl">🔍</span>
-                <h3 class="text-2xl font-semibold text-gray-100">Détection d'obstacles et gestion de l'environnement</h3>
-            </div>
-            <p class="text-gray-400">
-                Le robot est équipé de <strong><a href="https://fr.wikipedia.org/wiki/Lidar" class="text-blue-400 hover:underline">capteurs LIDAR</a></strong> et de capteurs infrarouges pour détecter les obstacles et ajuster sa trajectoire en temps réel. Ces capteurs lui permettent de détecter les objets en mouvement et d'éviter les collisions, assurant ainsi un nettoyage plus fluide et complet.
-            </p>
+    <!-- Section Cuve Chauffante -->
+    <section id="cuve" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto text-center mb-12" data-aos="fade-right">
+            <h2 class="text-4xl font-bold text-gray-100">Projet : Cuve Chauffante</h2>
+            <p class="text-gray-400 mt-4">Système de régulation de température pour une cuve industrielle avec contrôle précis.</p>
+            <a href="cuve.html" class="text-blue-400 hover:underline mt-4 block">En savoir plus</a>
+        </div>
+        <div class="max-w-5xl mx-auto text-center" data-aos="fade-up">
+            <img src="images/cuve.jpg" alt="Cuve Chauffante" class="w-full rounded-lg shadow-lg">
+        </div>
+    </section>
 
-            <div class="flex items-center space-x-4">
-                <span class="text-3xl">📱</span>
-                <h3 class="text-2xl font-semibold text-gray-100">Contrôle à distance et interface utilisateur</h3>
-            </div>
-            <p class="text-gray-400">
-                Une nouvelle fonctionnalité permet aux utilisateurs de contrôler le robot à distance grâce à une <strong>application mobile</strong>. Cette interface permet de définir des zones spécifiques à nettoyer, de suivre l'état du robot, et même de planifier des sessions de nettoyage. Cette amélioration facilite l'utilisation et personnalise l'expérience.
-            </p>
+    <!-- Section Robot -->
+    <section id="robot" class="py-20 bg-gray-800">
+        <div class="max-w-7xl mx-auto text-center mb-12" data-aos="fade-left">
+            <h2 class="text-4xl font-bold text-gray-100">Projet : Robotique</h2>
+            <p class="text-gray-400 mt-4">Création d'un robot multifonctionnel avec navigation autonome et fonctionnalités avancées.</p>
+            <a href="robot.html" class="text-blue-400 hover:underline mt-4 block">En savoir plus</a>
+        </div>
+        <div class="max-w-5xl mx-auto text-center" data-aos="fade-up">
+            <img src="images/robot.jpg" alt="Robot" class="w-full rounded-lg shadow-lg">
+        </div>
+    </section>
 
-            <div class="flex items-center space-x-4">
-                <span class="text-3xl">⚙️</span>
-                <h3 class="text-2xl font-semibold text-gray-100">Mise à jour du système de navigation</h3>
+    <!-- Section Compétences -->
+    <section id="competences" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto text-center mb-12" data-aos="fade-up">
+            <h2 class="text-4xl font-bold text-gray-100">Compétences Acquises</h2>
+            <p class="text-gray-400 mt-4">Voici un aperçu des compétences que j'ai développées au cours de mes projets :</p>
+        </div>
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
+            <div class="p-6 bg-gray-800 rounded-lg shadow-lg" data-aos="fade-up">
+                <h3 class="text-2xl font-bold text-gray-100">Programmation</h3>
+                <p class="text-gray-400 mt-2">Python, C++, ROS 2, gestion de microcontrôleurs.</p>
             </div>
-            <p class="text-gray-400">
-                Le robot fonctionne désormais avec <strong><a href="https://fr.wikipedia.org/wiki/Robot_Operating_System" class="text-blue-400 hover:underline">ROS 2 (Robot Operating System)</a></strong>, une plateforme qui permet de gérer plus facilement la navigation et d'intégrer de nouveaux capteurs. Grâce à cette mise à jour, le robot bénéficie d'une gestion optimisée de son déplacement et de sa navigation dans des environnements complexes.
-            </p>
+            <div class="p-6 bg-gray-800 rounded-lg shadow-lg" data-aos="fade-up">
+                <h3 class="text-2xl font-bold text-gray-100">Électronique</h3>
+                <p class="text-gray-400 mt-2">Conception et régulation de circuits, capteurs, actionneurs.</p>
+            </div>
+            <div class="p-6 bg-gray-800 rounded-lg shadow-lg" data-aos="fade-up">
+                <h3 class="text-2xl font-bold text-gray-100">Automatisation</h3>
+                <p class="text-gray-400 mt-2">Automates programmables, contrôle de processus industriels.</p>
+            </div>
+            <div class="p-6 bg-gray-800 rounded-lg shadow-lg" data-aos="fade-up">
+                <h3 class="text-2xl font-bold text-gray-100">Gestion de Projet</h3>
+                <p class="text-gray-400 mt-2">Travail en équipe, planification et documentation.</p>
+            </div>
         </div>
     </section>
 
