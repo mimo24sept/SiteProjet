@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Olivier</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-montserrat bg-gray-100 text-gray-900">
+
+    <!-- Navbar -->
+    <header class="bg-blue-600 text-white p-4">
+        <nav class="flex justify-between items-center">
+            <h1 class="text-xl font-semibold">Olivier's Portfolio</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="hover:text-yellow-400">Accueil</a></li>
+                <li><a href="#projects" class="hover:text-yellow-400">Projets</a></li>
+                <li><a href="#about" class="hover:text-yellow-400">À propos</a></li>
+                <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section d'introduction -->
+    <section id="home" class="h-screen flex items-center justify-center bg-blue-200 text-center">
+        <div>
+            <h2 class="text-4xl font-bold mb-4">Bienvenue sur mon Portfolio</h2>
+            <p class="text-xl mb-6">Découvrez mes projets d'apprentissage en robotique, automatisation et plus encore !</p>
+            <a href="#projects" class="bg-yellow-400 text-gray-900 py-2 px-6 rounded-full hover:bg-yellow-500">Voir mes projets</a>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projects" class="py-16 bg-gray-200">
+        <div class="max-w-7xl mx-auto text-center mb-12">
+            <h2 class="text-3xl font-semibold">Mes Projets</h2>
+            <p class="mt-2 text-lg text-gray-700">Explorez les projets que j'ai réalisés dans divers domaines d'apprentissage.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
+            <!-- Exemple de projet -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="images/project1.jpg" alt="Projet 1" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-4">Projet Automatisation</h3>
+                    <p class="text-gray-600">Une solution d'automatisation pour le contrôle de systèmes industriels.</p>
+                    <a href="#" class="text-blue-600 hover:underline">En savoir plus</a>
+                </div>
+            </div>
+            <!-- Répéter les divs pour chaque projet -->
+            <!-- ... -->
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto text-center mb-12">
+            <h2 class="text-3xl font-semibold">À propos de moi</h2>
+            <p class="mt-2 text-lg text-gray-700">Je suis un étudiant passionné par l'informatique, la robotique et l'automatisation. Voici mon parcours...</p>
+        </div>
+        <!-- Contenu de ta présentation -->
+        <div class="text-center px-6">
+            <p>Voici un résumé de mon parcours, de mes compétences et de mes projets.</p>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="py-16 bg-blue-600 text-white">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-4">Contactez-moi</h2>
+            <p class="mb-8">Vous pouvez me contacter pour plus d'informations sur mes projets ou des opportunités de collaboration.</p>
+            <a href="mailto:olivier@email.com" class="bg-yellow-400 text-gray-900 py-2 px-6 rounded-full hover:bg-yellow-500">Envoyer un Email</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-4 text-center">
+        <p>&copy; 2024 Olivier - Tous droits réservés</p>
+    </footer>
+
+</body>
+</html>
