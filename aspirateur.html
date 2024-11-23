@@ -48,9 +48,9 @@
                 Le projet de revamp du robot aspirateur s'est concentré sur l'amélioration de la navigation autonome et l'optimisation du système de contrôle. L'élément clé du robot est un <strong>Raspberry Pi 4</strong>, qui joue un rôle central dans la gestion de la navigation, le traitement des données des capteurs, et la commande des moteurs. Ce choix de plateforme permet une flexibilité maximale pour intégrer différents capteurs et périphériques tout en offrant une puissance de traitement suffisante pour les besoins de la robotique. Pour la gestion des tâches complexes liées à la navigation, j'ai utilisé <strong><a href="https://fr.wikipedia.org/wiki/Robot_Operating_System" class="text-blue-400 hover:underline">ROS 2 (Robot Operating System)</a></strong>, un système d'exploitation robuste permettant de traiter efficacement la localisation et la cartographie en temps réel (SLAM). Grâce à cette architecture logicielle, le robot peut prendre des décisions en fonction de son environnement et effectuer des trajets optimisés dans un espace inconnu.
             </p>
 
-            <!-- Image LiDAR -->
+            <!-- Image LiDAR (remplacez l'URL par votre chemin local) -->
             <div class="text-center">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Lidar_sensor.svg/500px-Lidar_sensor.svg.png" alt="Image LiDAR" class="mx-auto mt-8" style="max-width: 500px;">
+                <img src="images/lidar.jpg" alt="Image LiDAR" class="mx-auto mt-8" style="max-width: 500px;">
                 <p class="text-gray-400 mt-2">Schéma illustrant un capteur LiDAR utilisé pour la cartographie 3D et la détection d'obstacles.</p>
             </div>
 
@@ -62,33 +62,25 @@
                 Une des étapes cruciales de ce projet a été la conception du schéma électronique qui assure la sécurité et la performance du robot. Le <strong>Raspberry Pi</strong> contrôle les moteurs du robot via des <strong><a href="https://fr.wikipedia.org/wiki/Pont_en_H" class="text-blue-400 hover:underline">ponts en H</a></strong>, qui permettent une commande bidirectionnelle des moteurs à courant continu. Ces ponts en H sont nécessaires pour que le robot puisse se déplacer avant, arrière et changer de direction. Cependant, les moteurs de puissance élevée génèrent des courants qui peuvent endommager les circuits fragiles du Raspberry Pi. Pour éviter cela, des <strong><a href="https://fr.wikipedia.org/wiki/Optocoupleur" class="text-blue-400 hover:underline">optocoupleurs</a></strong> ont été intégrés dans le circuit. Ces composants servent d'isolateurs électriques entre les circuits de commande et le Raspberry Pi, permettant ainsi de protéger la carte contre les surtensions et de réduire le risque de défaillance. L'optocoupleur transmet les signaux électriques de manière optique, ce qui évite tout contact direct entre le Raspberry Pi et les moteurs puissants, assurant une longue durée de vie au matériel.
             </p>
 
-            <!-- Image Optocoupleur -->
+            <!-- Image Optocoupleur (remplacez l'URL par votre chemin local) -->
             <div class="text-center">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Optocoupler-circuit.svg/500px-Optocoupler-circuit.svg.png" alt="Schéma Optocoupleur" class="mx-auto mt-8" style="max-width: 500px;">
+                <img src="images/optocoupleur.jpg" alt="Schéma Optocoupleur" class="mx-auto mt-8" style="max-width: 500px;">
                 <p class="text-gray-400 mt-2">Schéma illustrant un circuit avec optocoupleur utilisé pour l'isolation électrique.</p>
             </div>
 
             <div class="flex items-center space-x-4">
                 <span class="text-3xl">⚙️</span>
-                <h3 class="text-2xl font-semibold text-gray-100">Gestion des moteurs et des capteurs</h3>
+                <h3 class="text-2xl font-semibold text-gray-100">Mise en place de ROS 2</h3>
             </div>
             <p class="text-gray-400">
-                Le robot utilise un système de capteurs sophistiqués pour naviguer et détecter son environnement. L'un des capteurs clés du robot est un <strong><a href="https://fr.wikipedia.org/wiki/Lidar" class="text-blue-400 hover:underline">LiDAR</a></strong> (Light Detection and Ranging), qui permet de mesurer les distances avec une grande précision en envoyant des impulsions lumineuses. Cela permet au robot de créer une carte détaillée de son environnement, ce qui est essentiel pour sa navigation autonome. En plus du LiDAR, le robot utilise des capteurs infrarouges et ultrasons pour la détection des obstacles proches. Ces capteurs permettent au robot d'ajuster sa trajectoire en temps réel, en fonction des objets détectés sur son chemin. Grâce à ces technologies, le robot peut éviter les obstacles et s'orienter de manière optimale dans des espaces complexes.
+                Enfin, j'ai utilisé <strong><a href="https://fr.wikipedia.org/wiki/Robot_Operating_System" class="text-blue-400 hover:underline">ROS 2</a></strong> pour faciliter la gestion du robot et sa navigation. ROS 2 permet de gérer efficacement les différents capteurs du robot et de coordonner leur interaction pour une navigation fluide. En particulier, il permet de gérer la localisation, la cartographie et la gestion des mouvements en temps réel, ce qui est crucial pour l'autonomie et la précision du robot.
             </p>
 
-            <!-- Image ROS 2 -->
+            <!-- Image ROS2 (remplacez l'URL par votre chemin local) -->
             <div class="text-center">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/ROS_Logo.svg/500px-ROS_Logo.svg.png" alt="Logo ROS 2" class="mx-auto mt-8" style="max-width: 500px;">
-                <p class="text-gray-400 mt-2">Illustration du logo de ROS 2, le système d'exploitation pour robots.</p>
+                <img src="images/ros2.jpg" alt="Image ROS 2" class="mx-auto mt-8" style="max-width: 500px;">
+                <p class="text-gray-400 mt-2">Schéma illustrant le fonctionnement de ROS 2 dans un robot mobile autonome.</p>
             </div>
-
-            <div class="flex items-center space-x-4">
-                <span class="text-3xl">🔧</span>
-                <h3 class="text-2xl font-semibold text-gray-100">Défis rencontrés et solutions</h3>
-            </div>
-            <p class="text-gray-400">
-                Au cours du développement, plusieurs défis techniques ont été rencontrés, notamment la gestion de la puissance et l'interfaçage entre le Raspberry Pi et les composants de puissance. L'une des premières solutions a été l'intégration des <strong><a href="https://fr.wikipedia.org/wiki/Optocoupleur" class="text-blue-400 hover:underline">optocoupleurs</a></strong>, qui ont permis de protéger le Raspberry Pi des courants élevés générés par les moteurs. En parallèle, la programmation du <strong><a href="https://fr.wikipedia.org/wiki/Robot_Operating_System" class="text-blue-400 hover:underline">ROS 2</a></strong> a présenté des défis en termes de gestion des communications entre les différents capteurs et moteurs, mais grâce à la souplesse de ROS 2, ces défis ont pu être surmontés en configurant des services et des messages efficaces pour la gestion du robot.
-            </p>
 
         </div>
     </section>
