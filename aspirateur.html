@@ -36,40 +36,40 @@
     <section class="py-20 bg-gray-900" id="projet-aspirateur">
         <div class="max-w-7xl mx-auto text-center" data-aos="fade-up">
             <h2 class="text-3xl font-bold text-gray-100">Présentation du Projet</h2>
-            <p class="text-gray-400 mt-4 mb-12">Voici les principales améliorations du projet de revamp du robot aspirateur.</p>
+            <p class="text-gray-400 mt-4 mb-12">Voici les principales améliorations et la réalisation technique du projet de revamp du robot aspirateur.</p>
         </div>
 
         <div class="max-w-5xl mx-auto space-y-10 text-left">
             <div class="flex items-center space-x-4">
                 <span class="text-3xl">🤖</span>
-                <h3 class="text-2xl font-semibold text-gray-100">Amélioration de la navigation autonome</h3>
+                <h3 class="text-2xl font-semibold text-gray-100">Réalisation du projet</h3>
             </div>
             <p class="text-gray-400">
-                Le robot utilise désormais la technologie de <strong><a href="https://fr.wikipedia.org/wiki/SLAM" class="text-blue-400 hover:underline">SLAM (Simultaneous Localization and Mapping)</a></strong>, qui lui permet de créer une carte en temps réel de son environnement. Grâce à cette cartographie, il peut se repérer de manière précise et naviguer sans heurter les objets, en s'adaptant aux obstacles. Il s'agit d'une avancée majeure dans la capacité du robot à effectuer des tâches de nettoyage autonomes.
+                Le projet de revamp du robot aspirateur s'est concentré sur l'amélioration de la navigation autonome et l'optimisation du système de contrôle. L'élément clé du robot est un <strong>Raspberry Pi 4</strong>, qui joue un rôle central dans la gestion de la navigation, le traitement des données des capteurs, et la commande des moteurs. Ce choix de plateforme permet une flexibilité maximale pour intégrer différents capteurs et périphériques tout en offrant une puissance de traitement suffisante pour les besoins de la robotique. Pour la gestion des tâches complexes liées à la navigation, j'ai utilisé <strong>ROS 2 (Robot Operating System)</strong>, un système d'exploitation robuste permettant de traiter efficacement la localisation et la cartographie en temps réel (SLAM). Grâce à cette architecture logicielle, le robot peut prendre des décisions en fonction de son environnement et effectuer des trajets optimisés dans un espace inconnu.
             </p>
 
             <div class="flex items-center space-x-4">
-                <span class="text-3xl">🔍</span>
-                <h3 class="text-2xl font-semibold text-gray-100">Détection d'obstacles et gestion de l'environnement</h3>
+                <span class="text-3xl">🔌</span>
+                <h3 class="text-2xl font-semibold text-gray-100">Schéma électronique et protection de la Raspberry Pi</h3>
             </div>
             <p class="text-gray-400">
-                Le robot est équipé de <strong><a href="https://fr.wikipedia.org/wiki/Lidar" class="text-blue-400 hover:underline">capteurs LIDAR</a></strong> et de capteurs infrarouges pour détecter les obstacles et ajuster sa trajectoire en temps réel. Ces capteurs lui permettent de détecter les objets en mouvement et d'éviter les collisions, assurant ainsi un nettoyage plus fluide et complet.
-            </p>
-
-            <div class="flex items-center space-x-4">
-                <span class="text-3xl">📱</span>
-                <h3 class="text-2xl font-semibold text-gray-100">Contrôle à distance et interface utilisateur</h3>
-            </div>
-            <p class="text-gray-400">
-                Une nouvelle fonctionnalité permet aux utilisateurs de contrôler le robot à distance grâce à une <strong>application mobile</strong>. Cette interface permet de définir des zones spécifiques à nettoyer, de suivre l'état du robot, et même de planifier des sessions de nettoyage. Cette amélioration facilite l'utilisation et personnalise l'expérience.
+                Une des étapes cruciales de ce projet a été la conception du schéma électronique qui assure la sécurité et la performance du robot. Le <strong>Raspberry Pi</strong> contrôle les moteurs du robot via des <strong>ponts en H</strong>, qui permettent une commande bidirectionnelle des moteurs à courant continu. Ces ponts en H sont nécessaires pour que le robot puisse se déplacer avant, arrière et changer de direction. Cependant, les moteurs de puissance élevée génèrent des courants qui peuvent endommager les circuits fragiles du Raspberry Pi. Pour éviter cela, des <strong>optocoupleurs</strong> ont été intégrés dans le circuit. Ces composants servent d'isolateurs électriques entre les circuits de commande et le Raspberry Pi, permettant ainsi de protéger la carte contre les surtensions et de réduire le risque de défaillance. L'optocoupleur transmet les signaux électriques de manière optique, ce qui évite tout contact direct entre le Raspberry Pi et les moteurs puissants, assurant une longue durée de vie au matériel.
             </p>
 
             <div class="flex items-center space-x-4">
                 <span class="text-3xl">⚙️</span>
-                <h3 class="text-2xl font-semibold text-gray-100">Mise à jour du système de navigation</h3>
+                <h3 class="text-2xl font-semibold text-gray-100">Gestion des moteurs et des capteurs</h3>
             </div>
             <p class="text-gray-400">
-                Le robot fonctionne désormais avec <strong><a href="https://fr.wikipedia.org/wiki/Robot_Operating_System" class="text-blue-400 hover:underline">ROS 2 (Robot Operating System)</a></strong>, une plateforme qui permet de gérer plus facilement la navigation et d'intégrer de nouveaux capteurs. Grâce à cette mise à jour, le robot bénéficie d'une gestion optimisée de son déplacement et de sa navigation dans des environnements complexes.
+                Le robot utilise un système de capteurs sophistiqués pour naviguer et détecter son environnement. L'un des capteurs clés du robot est un <strong>LiDAR</strong> (Light Detection and Ranging), qui permet de mesurer les distances avec une grande précision en envoyant des impulsions lumineuses. Cela permet au robot de créer une carte détaillée de son environnement, ce qui est essentiel pour sa navigation autonome. En plus du LiDAR, le robot utilise des capteurs infrarouges et ultrasons pour la détection des obstacles proches. Ces capteurs permettent au robot d'ajuster sa trajectoire en temps réel, en fonction des objets détectés sur son chemin. Grâce à ces technologies, le robot peut éviter les obstacles et s'orienter de manière optimale dans des espaces complexes.
+            </p>
+
+            <div class="flex items-center space-x-4">
+                <span class="text-3xl">🔧</span>
+                <h3 class="text-2xl font-semibold text-gray-100">Défis rencontrés et solutions</h3>
+            </div>
+            <p class="text-gray-400">
+                Au cours du développement, plusieurs défis techniques ont été rencontrés, notamment la gestion de la puissance et l'interfaçage entre le Raspberry Pi et les composants de puissance. L'une des premières solutions a été l'intégration des <strong>optocoupleurs</strong>, qui ont permis de protéger le Raspberry Pi des courants élevés générés par les moteurs. En parallèle, la programmation du <strong>ROS 2</strong> a présenté des défis de synchronisation entre les capteurs, mais grâce à une gestion avancée des messages et des services dans ROS, ces problèmes ont été surmontés. Un autre défi majeur a été de créer une carte de l'environnement en temps réel avec la technologie <strong>SLAM</strong>, qui nécessite une grande précision dans la détection des obstacles et un traitement rapide des données pour éviter toute perte de localisation. En travaillant sur ces défis, j'ai pu concevoir un robot capable de naviguer de manière autonome, tout en maintenant un contrôle précis et sécurisé des moteurs et des capteurs.
             </p>
         </div>
     </section>
