@@ -3,42 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projet Aspirateur Robot</title>
+    <title>Projet : Aspirateur Robot</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
 </head>
 <body class="bg-gray-900 text-gray-200">
-    <header class="bg-gray-800 text-center py-4">
-        <h1 class="text-3xl font-bold">Aspirateur Robot</h1>
-        <a href="index.html" class="text-blue-400 hover:underline">Retour au site</a>
-    </header>
-    <main class="py-10 px-4">
-        <div class="max-w-4xl mx-auto">
-            <img src="images/aspirateur.jpg" alt="Aspirateur Robot" class="rounded-lg shadow-lg mb-8">
-            <h2 class="text-2xl font-bold mb-4">Description</h2>
-            <p class="text-gray-400">
-                Le projet de revamp du robot aspirateur a pour objectif d'améliorer les capacités d'un robot existant, afin de rendre son fonctionnement plus performant, autonome et précis. Ce robot, conçu pour effectuer des tâches de nettoyage de manière autonome, bénéficie actuellement d'une série de mises à jour et de nouvelles fonctionnalités qui optimisent sa navigation et sa gestion de l'environnement.
 
-Objectifs du projet :
-Amélioration de la navigation autonome : Le robot utilise désormais le SLAM (Simultaneous Localization and Mapping), une technologie qui lui permet de créer une carte en temps réel de son environnement. Grâce à cette cartographie, le robot peut se repérer et se déplacer intelligemment dans son espace de travail. Il évite les obstacles et peut s'adapter à des configurations complexes sans intervention humaine.
-
-Détection d'obstacles et gestion de l'environnement : Des capteurs LIDAR et infrarouges sont intégrés pour améliorer la détection d'objets et d'obstacles. Cela permet au robot de naviguer de manière fluide, d'éviter les meubles et autres objets en mouvement, tout en assurant une couverture optimale de l'espace à nettoyer.
-
-Contrôle à distance et interface utilisateur : Le robot est connecté à une application mobile, permettant à l'utilisateur de suivre l'état du nettoyage, de définir des zones spécifiques à nettoyer et de planifier des cycles de nettoyage. Cette interface simple et intuitive améliore l'expérience d'utilisation, en offrant un contrôle total du robot à distance.
-
-Mise à jour du système de gestion de la navigation : Le robot fonctionne sous le système ROS 2 (Robot Operating System), une plateforme qui facilite l'intégration de nouveaux capteurs et l'optimisation des algorithmes de navigation. Cette mise à jour permet de mieux gérer les déplacements du robot et de faciliter l'ajout de fonctionnalités futures.
-
-Avancement du projet :
-Actuellement, le robot est opérationnel avec ses nouvelles capacités de navigation et de détection d'obstacles. Les premières phases de tests sont en cours, et des ajustements sont effectués pour optimiser l'algorithme de cartographie et les interactions avec les utilisateurs. Le robot commence à démontrer une capacité de nettoyage plus précise et efficace, avec une navigation autonome améliorée.
-
-L'objectif final est de fournir un robot aspirateur non seulement plus autonome et intelligent, mais également plus facile à utiliser, offrant ainsi une solution de nettoyage moderne et innovante, adaptée aux besoins des foyers actuels.
-            </p>
-            <h2 class="text-2xl font-bold mt-8 mb-4">Détails Techniques</h2>
-            <ul class="list-disc pl-5 text-gray-400">
-                <li>Utilisation de capteurs LIDAR et infrarouges.</li>
-                <li>Intégration avec ROS 2 pour la gestion des algorithmes.</li>
-                <li>Prototypage sur Raspberry Pi.</li>
+    <!-- Navbar -->
+    <header class="bg-gray-800 text-gray-200 fixed w-full z-10 shadow-lg">
+        <nav class="max-w-7xl mx-auto p-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Projet : Aspirateur Robot</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="hover:text-gray-400">Retour à l'accueil</a></li>
             </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="h-screen bg-gradient-to-br from-gray-800 to-gray-600 text-gray-100 flex items-center justify-center text-center">
+        <div data-aos="fade-up">
+            <h2 class="text-4xl md:text-6xl font-bold mb-6">Revamp du Robot Aspirateur</h2>
+            <p class="text-lg md:text-2xl mb-6">Amélioration de la navigation et des fonctionnalités d'un robot autonome de nettoyage.</p>
         </div>
-    </main>
+    </section>
+
+    <!-- Description du Projet -->
+    <section class="py-20 bg-gray-900" id="projet-aspirateur">
+        <div class="max-w-7xl mx-auto text-center" data-aos="fade-up">
+            <h2 class="text-3xl font-bold text-gray-100">Présentation du Projet</h2>
+            <p class="text-gray-400 mt-4 mb-12">Voici les principales améliorations du projet de revamp du robot aspirateur.</p>
+        </div>
+
+        <div class="max-w-5xl mx-auto space-y-10 text-left">
+            <div class="flex items-center space-x-4">
+                <span class="text-3xl">🤖</span>
+                <h3 class="text-2xl font-semibold text-gray-100">Amélioration de la navigation autonome</h3>
+            </div>
+            <p class="text-gray-400">
+                Le robot utilise désormais la technologie de <strong><a href="https://fr.wikipedia.org/wiki/SLAM" class="text-blue-400 hover:underline">SLAM (Simultaneous Localization and Mapping)</a></strong>, qui lui permet de créer une carte en temps réel de son environnement. Grâce à cette cartographie, il peut se repérer de manière précise et naviguer sans heurter les objets, en s'adaptant aux obstacles. Il s'agit d'une avancée majeure dans la capacité du robot à effectuer des tâches de nettoyage autonomes.
+            </p>
+
+            <div class="flex items-center space-x-4">
+                <span class="text-3xl">🔍</span>
+                <h3 class="text-2xl font-semibold text-gray-100">Détection d'obstacles et gestion de l'environnement</h3>
+            </div>
+            <p class="text-gray-400">
+                Le robot est équipé de <strong><a href="https://fr.wikipedia.org/wiki/Lidar" class="text-blue-400 hover:underline">capteurs LIDAR</a></strong> et de capteurs infrarouges pour détecter les obstacles et ajuster sa trajectoire en temps réel. Ces capteurs lui permettent de détecter les objets en mouvement et d'éviter les collisions, assurant ainsi un nettoyage plus fluide et complet.
+            </p>
+
+            <div class="flex items-center space-x-4">
+                <span class="text-3xl">📱</span>
+                <h3 class="text-2xl font-semibold text-gray-100">Contrôle à distance et interface utilisateur</h3>
+            </div>
+            <p class="text-gray-400">
+                Une nouvelle fonctionnalité permet aux utilisateurs de contrôler le robot à distance grâce à une <strong>application mobile</strong>. Cette interface permet de définir des zones spécifiques à nettoyer, de suivre l'état du robot, et même de planifier des sessions de nettoyage. Cette amélioration facilite l'utilisation et personnalise l'expérience.
+            </p>
+
+            <div class="flex items-center space-x-4">
+                <span class="text-3xl">⚙️</span>
+                <h3 class="text-2xl font-semibold text-gray-100">Mise à jour du système de navigation</h3>
+            </div>
+            <p class="text-gray-400">
+                Le robot fonctionne désormais avec <strong><a href="https://fr.wikipedia.org/wiki/Robot_Operating_System" class="text-blue-400 hover:underline">ROS 2 (Robot Operating System)</a></strong>, une plateforme qui permet de gérer plus facilement la navigation et d'intégrer de nouveaux capteurs. Grâce à cette mise à jour, le robot bénéficie d'une gestion optimisée de son déplacement et de sa navigation dans des environnements complexes.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-700 text-gray-200 text-center py-6">
+        <p>&copy; 2024 Olivier. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Import AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
 </body>
 </html>
