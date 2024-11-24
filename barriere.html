@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projet : Gestion de Barrière</title>
-    <!-- Import Tailwind CSS -->
+    <title>Projet : Barrière Automatique</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -13,73 +13,136 @@
     </style>
 </head>
 <body class="bg-gray-900 text-gray-200">
-    <!-- Header -->
+
+    <!-- Navbar -->
     <header class="bg-gray-800 text-gray-200 fixed w-full z-10 shadow-lg">
         <nav class="max-w-7xl mx-auto p-4 flex justify-between items-center">
-            <h1 class="text-2xl font-bold">Projet : Gestion de Barrière</h1>
-            <a href="index.html" class="hover:text-gray-400">Retour au Portfolio</a>
+            <h1 class="text-2xl font-bold">Projet : Barrière Automatique</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="hover:text-gray-400">Retour à l'accueil</a></li>
+            </ul>
         </nav>
     </header>
 
-    <main class="mt-20">
-        <!-- Introduction -->
-        <section class="py-12">
-            <div class="max-w-5xl mx-auto text-center" data-aos="fade-up">
-                <h2 class="text-4xl font-bold mb-6">Gestion de Barrière Automatisée</h2>
-                <p class="text-gray-400 text-lg">Conception d'un système automatisé pour le contrôle d'accès d'un parking, intégrant sécurité et automatisation.</p>
+    <!-- Hero Section -->
+    <section id="home" class="h-screen bg-gradient-to-br from-gray-800 to-gray-600 text-gray-100 flex items-center justify-center text-center">
+        <div data-aos="fade-up">
+            <h2 class="text-4xl md:text-6xl font-bold mb-6">Projet de Barrière Automatique</h2>
+            <p class="text-lg md:text-2xl mb-6">Développement d'un système automatisé pour le contrôle d'accès avec gestion électronique et logicielle.</p>
+        </div>
+    </section>
+
+    <!-- Description du Projet -->
+    <section class="py-20 bg-gray-900" id="projet-barriere">
+        <div class="max-w-7xl mx-auto text-center" data-aos="fade-up">
+            <h2 class="text-3xl font-bold text-gray-100">Présentation du Projet</h2>
+            <p class="text-gray-400 mt-4 mb-12">Voici les détails techniques et les étapes de réalisation du projet de barrière automatique.</p>
+        </div>
+
+        <div class="max-w-5xl mx-auto space-y-10 text-left">
+            <div class="flex items-center space-x-4">
+                <span class="text-3xl">🚧</span>
+                <h3 class="text-2xl font-semibold text-gray-100">Réalisation du projet</h3>
             </div>
-        </section>
+            <p class="text-gray-400">
+                Le projet de barrière automatique a été conçu pour automatiser le contrôle d'accès à une zone sécurisée. Le cœur du système repose sur un <strong>automate Zelio</strong>, qui gère les commandes de montée et descente de la barrière en fonction des signaux envoyés par des capteurs (infrarouges ou à ultrasons) détectant la présence d'un véhicule. Le système comprend également un mécanisme d'interruption pour garantir la sécurité des usagers. En complément, une interface utilisateur simple a été mise en place pour permettre un contrôle manuel ou une reconfiguration rapide.
+            </p>
 
-        <!-- Description du Projet -->
-        <section class="py-12 bg-gray-800">
-            <div class="max-w-5xl mx-auto space-y-8" data-aos="fade-right">
-                <h3 class="text-3xl font-bold mb-4">Description du Système</h3>
-                <p>Le projet visait à automatiser deux barrières de parking avec une séquence bien définie. Lorsqu'une voiture arrive, la première barrière s'ouvre, permettant l'entrée dans une zone intermédiaire. La barrière se referme ensuite, et la seconde barrière s'ouvre pour libérer le véhicule. Ce processus inclut des mesures de sécurité pour éviter tout accident, comme la détection de retour arrière.</p>
-                <img src="images/circuit_barriere.jpg" alt="Schéma électronique du projet Barrière" class="w-full rounded-lg shadow-lg">
+            <!-- Image Zelio (remplacez l'URL par votre chemin local) -->
+            <div class="text-center">
+                <img src="images/zelio_barriere.jpg" alt="Automate Zelio" class="mx-auto mt-8" style="max-width: 500px;">
             </div>
-        </section>
 
-        <section class="py-12">
-            <div class="max-w-5xl mx-auto space-y-8" data-aos="fade-left">
-                <h3 class="text-3xl font-bold mb-4">Conception Électronique</h3>
-                <p>Pour réaliser ce projet, plusieurs cartes électroniques ont été conçues : une carte de détection de présence, une carte pour le lecteur de badge intégrant un optocoupleur, une carte de détection de luminosité pour le déclenchement d'un éclairage nocturne, et une carte principale de gestion. Je me suis chargé de la carte de luminosité, utilisant une photorésistance couplée à un amplificateur opérationnel servant de comparateur. Tous les composants ont été soudés et validés sur une maquette.</p>
-                <img src="images/maquette_barriere.jpg" alt="Maquette fonctionnelle de la barrière" class="w-full rounded-lg shadow-lg">
+            <div class="flex items-center space-x-4">
+                <span class="text-3xl">📋</span>
+                <h3 class="text-2xl font-semibold text-gray-100">Conception du Grafcet</h3>
             </div>
-        </section>
+            <p class="text-gray-400">
+                Une étape clé de ce projet a été la conception du <strong>Grafcet</strong>, qui décrit le fonctionnement logique de la barrière. Ce diagramme garantit que toutes les transitions entre les états (montée, descente, arrêt) sont correctement synchronisées avec les signaux des capteurs et les commandes de l'utilisateur. Cette méthodologie a permis de simplifier le développement et d'assurer une fiabilité maximale du système.
+            </p>
 
-        <section class="py-12 bg-gray-800">
-            <div class="max-w-5xl mx-auto space-y-8" data-aos="fade-right">
-                <h3 class="text-3xl font-bold mb-4">Programmation et Automatisation</h3>
-                <p>Le fonctionnement de la maquette était contrôlé par un automate programmable via le logiciel Zelio. Nous avons conçu deux Grafcet : un Grafcet de fonctionnement pour orchestrer les étapes globales, et un Grafcet de tâche pour gérer les détails des actions, comme la détection de présence et l'éclairage. La maquette reproduisait fidèlement le fonctionnement attendu d'un parking automatisé.</p>
-                <img src="images/zelio_barriere.jpg" alt="Logiciel Zelio pour la gestion des barrières" class="w-full rounded-lg shadow-lg">
+            <!-- Image Grafcet (remplacez l'URL par votre chemin local) -->
+            <div class="text-center">
+                <img src="images/circuit_barriere.jpg" alt="Grafcet de la barrière" class="mx-auto mt-8" style="max-width: 500px;">
             </div>
-        </section>
 
-        <!-- Compétences -->
-        <section class="py-12">
-            <div class="max-w-5xl mx-auto text-center" data-aos="fade-up">
-                <h3 class="text-3xl font-bold mb-6">Compétences Mobilisées</h3>
-                <ul class="list-disc list-inside text-left space-y-4">
-                    <li><strong>Conception de cartes électroniques :</strong> création et validation de circuits pour des capteurs et actionneurs.</li>
-                    <li><strong>Programmation d'automates :</strong> développement de Grafcet pour la gestion des processus.</li>
-                    <li><strong>Réalisation de maquettes :</strong> intégration et test en conditions réelles.</li>
-                </ul>
+            <div class="flex items-center space-x-4">
+                <span class="text-3xl">⚙️</span>
+                <h3 class="text-2xl font-semibold text-gray-100">Montage et tests</h3>
             </div>
-        </section>
-    </main>
+            <p class="text-gray-400">
+                Le montage physique de la barrière a nécessité une maquette mécanique fonctionnelle. Cette maquette comprend un moteur contrôlant le mouvement de la barrière, relié à l'automate Zelio. Les tests ont permis de valider la robustesse du système, notamment sa capacité à réagir rapidement à des anomalies comme une interruption brusque ou la détection d'un obstacle pendant le mouvement. Chaque composant a été soigneusement intégré pour garantir une fiabilité optimale.
+            </p>
 
-    <!-- Footer -->
-    <footer class="bg-gray-700 text-gray-200 text-center py-6">
-        <p>&copy; 2024 Olivier. Tous droits réservés.</p>
-    </footer>
+            <!-- Image Maquette (remplacez l'URL par votre chemin local) -->
+            <div class="text-center">
+                <img src="images/maquette_barriere.jpg" alt="Maquette de la barrière" class="mx-auto mt-8" style="max-width: 500px;">
+            </div>
 
-    <!-- AOS Script -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1000,
-            once: true,
-        });
-    </script>
+            <div class="flex items-center space-x-4">
+                <span class="text-3xl">🔧</span>
+                <h3 class="text-2xl font-semibold text-gray-100">Défis rencontrés et solutions</h3>
+            </div>
+            <p class="text-gray-400">
+                L'un des principaux défis techniques a été d'assurer une synchronisation parfaite entre les capteurs et les commandes de l'automate. Cela a nécessité des ajustements précis dans le programme de l'automate pour éviter les comportements erratiques. De plus, l'intégration des capteurs infrarouges a demandé une calibration minutieuse pour éviter les fausses détections dues aux variations de lumière ambiante. Grâce à des tests approfondis et à une optimisation progressive, ces défis ont été relevés avec succès.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- Compétences utilisées dans le projet -->
+    <section class="py-20 bg-gray-800" id="competences">
+        <div class="max-w-7xl mx-auto text-center" data-aos="fade-up">
+            <h2 class="text-3xl font-bold text-gray-100">Compétences utilisées dans le projet</h2>
+            <p class="text-gray-400 mt-4 mb-12">Voici les principales compétences développées et utilisées lors de la réalisation de ce projet.</p>
+        </div>
+
+        <div class="max-w-5xl mx-auto text-left">
+            <div class="space-y-8">
+                <div class="flex items-center space-x-4">
+                    <span class="text-3xl">🖥️</span>
+                    <h3 class="text-2xl font-semibold text-gray-100">Programmation d'automates</h3>
+                </div>
+                <p class="text-gray-400">
+                    La programmation de l'automate Zelio a constitué un élément central de ce projet. En utilisant un langage de programmation ladder, j'ai pu développer une logique fiable pour le fonctionnement automatique de la barrière, tout en permettant une gestion manuelle si nécessaire.
+                </p>
+
+                <div class="flex items-center space-x-4">
+                    <span class="text-3xl">📐</span>
+                    <h3 class="text-2xl font-semibold text-gray-100">Conception et schématisation</h3>
+                </div>
+                <p class="text-gray-400">
+                    La conception des schémas électriques et du Grafcet a permis de structurer et de documenter le projet. Ces outils ont été essentiels pour garantir que toutes les étapes de la réalisation soient alignées et compréhensibles pour l'équipe.
+                </p>
+
+                <div class="flex items-center space-x-4">
+                    <span class="text-3xl">🔍</span>
+                    <h3 class="text-2xl font-semibold text-gray-100">Tests et optimisation</h3>
+                </div>
+                <p class="text-gray-400">
+                    Des tests rigoureux ont été effectués pour valider le bon fonctionnement de la
+                              </p>
+
+            <div class="flex items-center space-x-4">
+                <span class="text-3xl">⚡</span>
+                <h3 class="text-2xl font-semibold text-gray-100">Intégration des capteurs</h3>
+            </div>
+            <p class="text-gray-400">
+                L'intégration des capteurs infrarouges et à ultrasons a été cruciale pour détecter la présence des véhicules. Ces capteurs ont été calibrés pour minimiser les fausses détections et garantir une réponse rapide et fiable du système.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-6 bg-gray-900 text-center text-gray-400">
+    <p>&copy; 2024 Olivier | Projet Barrière Automatique</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
+
