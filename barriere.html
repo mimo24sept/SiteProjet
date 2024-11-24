@@ -45,7 +45,9 @@
                 <h3 class="text-2xl font-semibold text-gray-100">Réalisation du projet</h3>
             </div>
             <p class="text-gray-400">
-                Le projet de barrière automatique a été conçu pour automatiser le contrôle d'accès à une zone sécurisée. Le cœur du système repose sur un <strong>automate Zelio</strong>, qui gère les commandes de montée et descente de la barrière en fonction des signaux envoyés par des capteurs (infrarouges ou à ultrasons) détectant la présence d'un véhicule. Le système comprend également un mécanisme d'interruption pour garantir la sécurité des usagers. En complément, une interface utilisateur simple a été mise en place pour permettre un contrôle manuel ou une reconfiguration rapide.
+                Le projet de barrière automatique a été conçu pour automatiser le contrôle d'accès à une zone sécurisée. Le cœur du système repose sur un <strong><a href="https://fr.wikipedia.org/wiki/Automate_programmable_industriel" target="_blank" class="text-blue-400">automate Zelio</a></strong>, un type d'<a href="https://fr.wikipedia.org/wiki/Automate_programmable_industriel" target="_blank" class="text-blue-400">automate programmable industriel (API)</a>, qui gère les commandes de montée et descente de la barrière en fonction des signaux envoyés par des capteurs (infrarouges ou à ultrasons) détectant la présence d'un véhicule. Les capteurs infrarouges ou à ultrasons sont utilisés pour détecter la distance et la présence d'obstacles, garantissant ainsi une ouverture ou une fermeture précise de la barrière en toute sécurité.
+                <br><br>
+                Un autre aspect clé de ce projet est la mise en place d'un <strong><a href="https://fr.wikipedia.org/wiki/Syst%C3%A8me_de_contr%C3%B4le_de_processus#Automates_programmables_industriels" target="_blank" class="text-blue-400">système de contrôle</a></strong>, qui assure une gestion électronique fiable et sécurisée. Ce système peut également inclure des mécanismes d'interruption d'urgence pour éviter des accidents et garantir la sécurité des usagers.
             </p>
 
             <!-- Image Zelio (remplacez l'URL par votre chemin local) -->
@@ -58,23 +60,33 @@
                 <h3 class="text-2xl font-semibold text-gray-100">Conception du Grafcet</h3>
             </div>
             <p class="text-gray-400">
-                Une étape clé de ce projet a été la conception du <strong>Grafcet</strong>, qui décrit le fonctionnement logique de la barrière. Ce diagramme garantit que toutes les transitions entre les états (montée, descente, arrêt) sont correctement synchronisées avec les signaux des capteurs et les commandes de l'utilisateur. Cette méthodologie a permis de simplifier le développement et d'assurer une fiabilité maximale du système.
+                Une étape essentielle de ce projet a été la conception du <strong><a href="https://fr.wikipedia.org/wiki/GRAFCET" target="_blank" class="text-blue-400">Grafcet</a></strong>, un diagramme qui décrit le fonctionnement logique de la barrière. Le Grafcet permet de représenter visuellement les étapes et les transitions du système, garantissant une exécution correcte des processus. Ce diagramme assure que toutes les transitions entre les états (montée, descente, arrêt) sont correctement synchronisées avec les signaux des capteurs et les commandes de l'utilisateur, permettant ainsi de mieux comprendre la logique de fonctionnement du système automatisé.
+                <br><br>
+                Le Grafcet est un outil largement utilisé dans l'automatisation industrielle pour la gestion des processus. Il est basé sur un ensemble de règles logiques et de séquences d'actions, ce qui facilite la compréhension et l'implémentation des systèmes de contrôle complexe.
             </p>
+
+            <!-- Image Grafcet (remplacez l'URL par votre chemin local) -->
 
             <div class="flex items-center space-x-4">
                 <span class="text-3xl">⚙️</span>
                 <h3 class="text-2xl font-semibold text-gray-100">Montage et tests</h3>
             </div>
             <p class="text-gray-400">
-                Le montage physique de la barrière a nécessité une maquette mécanique fonctionnelle. Cette maquette comprend un moteur contrôlant le mouvement de la barrière, relié à l'automate Zelio. Les tests ont permis de valider la robustesse du système, notamment sa capacité à réagir rapidement à des anomalies comme une interruption brusque ou la détection d'un obstacle pendant le mouvement. Chaque composant a été soigneusement intégré pour garantir une fiabilité optimale.
+                Le montage physique de la barrière a nécessité la création d'une maquette fonctionnelle avec des composants robotiques, y compris un moteur contrôlant le mouvement de la barrière. Le moteur est relié à l'automate Zelio pour activer les mouvements d'ouverture et de fermeture de la barrière. <strong><a href="https://fr.wikipedia.org/wiki/Moteur_%C3%A9lectrique" target="_blank" class="text-blue-400">Les moteurs électriques</a></strong> utilisés dans ce type de projet sont cruciaux pour assurer un mouvement fluide et précis de la barrière. Des tests ont été effectués pour valider la robustesse du système, notamment sa capacité à réagir rapidement à des anomalies comme une interruption brusque ou la détection d'un obstacle pendant le mouvement.
+                <br><br>
+                Ces tests sont essentiels pour s'assurer de la sécurité du système et de son bon fonctionnement sur le long terme. Chaque composant a été soigneusement intégré pour garantir une fiabilité optimale dans toutes les situations possibles.
             </p>
+
+            <!-- Image Maquette (remplacez l'URL par votre chemin local) -->
 
             <div class="flex items-center space-x-4">
                 <span class="text-3xl">🔧</span>
                 <h3 class="text-2xl font-semibold text-gray-100">Défis rencontrés et solutions</h3>
             </div>
             <p class="text-gray-400">
-                L'un des principaux défis techniques a été d'assurer une synchronisation parfaite entre les capteurs et les commandes de l'automate. Cela a nécessité des ajustements précis dans le programme de l'automate pour éviter les comportements erratiques. De plus, l'intégration des capteurs infrarouges a demandé une calibration minutieuse pour éviter les fausses détections dues aux variations de lumière ambiante. Grâce à des tests approfondis et à une optimisation progressive, ces défis ont été relevés avec succès.
+                L'un des principaux défis techniques a été d'assurer une synchronisation parfaite entre les capteurs et les commandes de l'automate. La <strong><a href="https://fr.wikipedia.org/wiki/Capteur" target="_blank" class="text-blue-400">synchronicité des capteurs</a></strong> est primordiale pour garantir une détection correcte des obstacles et une action précise de la barrière. Cela a nécessité des ajustements fins dans le programme de l'automate pour éviter des comportements erratiques ou non sécurisés.
+                <br><br>
+                De plus, l'intégration des capteurs infrarouges a demandé une calibration minutieuse pour éviter les fausses détections dues aux variations de lumière ambiante. Un défi supplémentaire a été de garantir que la barrière s'ouvre ou se ferme de manière fiable en toutes conditions, ce qui a été résolu grâce à des tests approfondis et des ajustements continus du système.
             </p>
 
         </div>
@@ -94,7 +106,7 @@
                     <h3 class="text-2xl font-semibold text-gray-100">Programmation d'automates</h3>
                 </div>
                 <p class="text-gray-400">
-                    La programmation de l'automate Zelio a constitué un élément central de ce projet. En utilisant un langage de programmation ladder, j'ai pu développer une logique fiable pour le fonctionnement automatique de la barrière, tout en permettant une gestion manuelle si nécessaire.
+                    La programmation de l'<a href="https://fr.wikipedia.org/wiki/Automate_programmable_industriel" target="_blank" class="text-blue-400">automate Zelio</a> a constitué un élément central de ce projet. En utilisant un langage de programmation <strong>Ladder</strong>, j'ai pu développer une logique fiable pour le fonctionnement automatique de la barrière. Le <a href="https://fr.wikipedia.org/wiki/Ladder_(langage)" target="_blank" class="text-blue-400">Ladder</a> est un langage graphique souvent utilisé pour programmer les automates industriels, en particulier dans des systèmes comme celui-ci qui nécessitent des interventions de sécurité et une logique simple et fiable.
                 </p>
 
                 <div class="flex items-center space-x-4">
@@ -102,7 +114,7 @@
                     <h3 class="text-2xl font-semibold text-gray-100">Conception et schématisation</h3>
                 </div>
                 <p class="text-gray-400">
-                    La conception des schémas électriques et du Grafcet a permis de structurer et de documenter le projet. Ces outils ont été essentiels pour garantir que toutes les étapes de la réalisation soient alignées et compréhensibles pour l'équipe.
+                    La conception des schémas électriques et du Grafcet a permis de structurer et de documenter le projet. Ces outils ont été essentiels pour garantir que toutes les étapes de la réalisation soient alignées et compréhensibles pour l'équipe. Les schémas électriques sont un élément clé pour visualiser et résoudre les problèmes potentiels pendant le montage et les tests.
                 </p>
 
                 <div class="flex items-center space-x-4">
@@ -110,29 +122,11 @@
                     <h3 class="text-2xl font-semibold text-gray-100">Tests et optimisation</h3>
                 </div>
                 <p class="text-gray-400">
-                    Des tests rigoureux ont été effectués pour valider le bon fonctionnement de la barrière dans diverses conditions. Ces tests ont permis de détecter et de corriger des problèmes potentiels, comme des délais de réponse ou des erreurs de détection des capteurs. L'optimisation a également permis d'améliorer les performances du système tout en réduisant la consommation énergétique.
+                    Des tests rigoureux ont été effectués pour valider le bon fonctionnement de la barrière. L'optimisation des capteurs et des circuits de commande a permis de garantir la stabilité et la sécurité du système sur le long terme. Ces tests ont permis d'identifier et de résoudre les défis techniques en cours de développement, assurant ainsi un système opérationnel fiable.
                 </p>
-
-            <div class="flex items-center space-x-4">
-                <span class="text-3xl">⚡</span>
-                <h3 class="text-2xl font-semibold text-gray-100">Intégration des capteurs</h3>
             </div>
-            <p class="text-gray-400">
-                L'intégration des capteurs infrarouges et à ultrasons a été cruciale pour détecter la présence des véhicules. Ces capteurs ont été calibrés pour minimiser les fausses détections et garantir une réponse rapide et fiable du système.
-            </p>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Footer -->
-<footer class="py-6 bg-gray-900 text-center text-gray-400">
-    <p>&copy; 2024 Olivier | Projet Barrière Automatique</p>
-</footer>
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
 </body>
 </html>
-
