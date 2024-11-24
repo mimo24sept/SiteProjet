@@ -3,28 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projet Barrière Automatique</title>
+    <title>Projet : Gestion de Barrière</title>
+    <!-- Import Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
 </head>
 <body class="bg-gray-900 text-gray-200">
-    <header class="bg-gray-800 text-center py-4">
-        <h1 class="text-3xl font-bold">Gestion de Barrière</h1>
-        <a href="index.html" class="text-blue-400 hover:underline">Retour au site</a>
+    <!-- Header -->
+    <header class="bg-gray-800 text-gray-200 fixed w-full z-10 shadow-lg">
+        <nav class="max-w-7xl mx-auto p-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Projet : Gestion de Barrière</h1>
+            <a href="index.html" class="hover:text-gray-400">Retour au Portfolio</a>
+        </nav>
     </header>
-    <main class="py-10 px-4">
-        <div class="max-w-4xl mx-auto">
-            <img src="images/barriere.jpg" alt="Barrière Automatique" class="rounded-lg shadow-lg mb-8">
-            <h2 class="text-2xl font-bold mb-4">Description</h2>
-            <p class="text-gray-400">
-                Ce projet consiste à automatiser une barrière de parking en utilisant un système de reconnaissance de véhicule et de contrôle d'accès.
-            </p>
-            <h2 class="text-2xl font-bold mt-8 mb-4">Détails Techniques</h2>
-            <ul class="list-disc pl-5 text-gray-400">
-                <li>Caméra pour la reconnaissance de plaques d'immatriculation.</li>
-                <li>Automate programmable pour le contrôle des ouvertures.</li>
-                <li>Système sécurisé de gestion des autorisations.</li>
-            </ul>
-        </div>
+
+    <main class="mt-20">
+        <!-- Introduction -->
+        <section class="py-12">
+            <div class="max-w-5xl mx-auto text-center" data-aos="fade-up">
+                <h2 class="text-4xl font-bold mb-6">Gestion de Barrière Automatisée</h2>
+                <p class="text-gray-400 text-lg">Conception d'un système automatisé pour le contrôle d'accès d'un parking, intégrant sécurité et automatisation.</p>
+            </div>
+        </section>
+
+        <!-- Description du Projet -->
+        <section class="py-12 bg-gray-800">
+            <div class="max-w-5xl mx-auto space-y-8" data-aos="fade-right">
+                <h3 class="text-3xl font-bold mb-4">Description du Système</h3>
+                <p>Le projet visait à automatiser deux barrières de parking avec une séquence bien définie. Lorsqu'une voiture arrive, la première barrière s'ouvre, permettant l'entrée dans une zone intermédiaire. La barrière se referme ensuite, et la seconde barrière s'ouvre pour libérer le véhicule. Ce processus inclut des mesures de sécurité pour éviter tout accident, comme la détection de retour arrière.</p>
+                <img src="images/circuit_barriere.jpg" alt="Schéma électronique du projet Barrière" class="w-full rounded-lg shadow-lg">
+            </div>
+        </section>
+
+        <section class="py-12">
+            <div class="max-w-5xl mx-auto space-y-8" data-aos="fade-left">
+                <h3 class="text-3xl font-bold mb-4">Conception Électronique</h3>
+                <p>Pour réaliser ce projet, plusieurs cartes électroniques ont été conçues : une carte de détection de présence, une carte pour le lecteur de badge intégrant un optocoupleur, une carte de détection de luminosité pour le déclenchement d'un éclairage nocturne, et une carte principale de gestion. Je me suis chargé de la carte de luminosité, utilisant une photorésistance couplée à un amplificateur opérationnel servant de comparateur. Tous les composants ont été soudés et validés sur une maquette.</p>
+                <img src="images/maquette_barriere.jpg" alt="Maquette fonctionnelle de la barrière" class="w-full rounded-lg shadow-lg">
+            </div>
+        </section>
+
+        <section class="py-12 bg-gray-800">
+            <div class="max-w-5xl mx-auto space-y-8" data-aos="fade-right">
+                <h3 class="text-3xl font-bold mb-4">Programmation et Automatisation</h3>
+                <p>Le fonctionnement de la maquette était contrôlé par un automate programmable via le logiciel Zelio. Nous avons conçu deux Grafcet : un Grafcet de fonctionnement pour orchestrer les étapes globales, et un Grafcet de tâche pour gérer les détails des actions, comme la détection de présence et l'éclairage. La maquette reproduisait fidèlement le fonctionnement attendu d'un parking automatisé.</p>
+                <img src="images/zelio_barriere.jpg" alt="Logiciel Zelio pour la gestion des barrières" class="w-full rounded-lg shadow-lg">
+            </div>
+        </section>
+
+        <!-- Compétences -->
+        <section class="py-12">
+            <div class="max-w-5xl mx-auto text-center" data-aos="fade-up">
+                <h3 class="text-3xl font-bold mb-6">Compétences Mobilisées</h3>
+                <ul class="list-disc list-inside text-left space-y-4">
+                    <li><strong>Conception de cartes électroniques :</strong> création et validation de circuits pour des capteurs et actionneurs.</li>
+                    <li><strong>Programmation d'automates :</strong> développement de Grafcet pour la gestion des processus.</li>
+                    <li><strong>Réalisation de maquettes :</strong> intégration et test en conditions réelles.</li>
+                </ul>
+            </div>
+        </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-700 text-gray-200 text-center py-6">
+        <p>&copy; 2024 Olivier. Tous droits réservés.</p>
+    </footer>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
 </body>
 </html>
