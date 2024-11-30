@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projet : Cuve pour le Stockage du bois</title>
+    <title>Projet : Cuve de Stockage</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
@@ -17,9 +17,9 @@
     <!-- Navbar -->
     <header class="bg-gray-800 text-gray-200 fixed w-full z-10 shadow-lg">
         <nav class="max-w-7xl mx-auto p-4 flex justify-between items-center">
-            <h1 class="text-2xl font-bold">Projet : Aspirateur Robot</h1>
+            <h1 class="text-2xl font-bold">Projet : Cuve de Stockage</h1>
             <ul class="flex space-x-6">
-                <li><a href="index.html#cuve" class="hover:text-gray-400">Retour à l'accueil</a></li>
+                <li><a href="index.html" class="hover:text-gray-400">Retour à l'accueil</a></li>
             </ul>
         </nav>
     </header>
@@ -27,67 +27,57 @@
     <!-- Hero Section -->
     <section id="home" class="h-screen bg-gradient-to-br from-gray-800 to-gray-600 text-gray-100 flex items-center justify-center text-center">
         <div data-aos="fade-up">
-            <h2 class="text-4xl md:text-6xl font-bold mb-6">Cuve pour le stockage du bois</h2>
-            <p class="text-lg md:text-2xl mb-6">Amélioration de la navigation et des fonctionnalités d'un robot autonome de nettoyage.</p>
+            <h2 class="text-4xl md:text-6xl font-bold mb-6">Projet de Cuve de Stockage</h2>
+            <p class="text-lg md:text-2xl mb-6">Système automatisé pour maintenir le bois à une température réglable avec gestion électronique et électrique.</p>
         </div>
     </section>
 
     <!-- Description du Projet -->
-    <section class="py-20 bg-gray-900" id="projet-aspirateur">
+    <section class="py-20 bg-gray-900" id="projet-cuve">
         <div class="max-w-7xl mx-auto text-center" data-aos="fade-up">
             <h2 class="text-3xl font-bold text-gray-100">Présentation du Projet</h2>
-            <p class="text-gray-400 mt-4 mb-12">Voici les principales améliorations et la réalisation technique du projet de revamp du robot aspirateur.</p>
+            <p class="text-gray-400 mt-4 mb-12">Voici les détails techniques et les étapes de réalisation du projet de cuve de stockage réglable.</p>
         </div>
 
         <div class="max-w-5xl mx-auto space-y-10 text-left">
             <div class="flex items-center space-x-4">
-                <span class="text-3xl">🤖</span>
+                <span class="text-3xl">🔒</span>
                 <h3 class="text-2xl font-semibold text-gray-100">Réalisation du projet</h3>
             </div>
             <p class="text-gray-400">
-                Le projet de revamp du robot aspirateur s'est concentré sur l'amélioration de la navigation autonome et l'optimisation du système de contrôle. L'élément clé du robot est un <strong>Raspberry Pi 4</strong>, qui joue un rôle central dans la gestion de la navigation, le traitement des données des capteurs, et la commande des moteurs. Ce choix de plateforme permet une flexibilité maximale pour intégrer différents capteurs et périphériques tout en offrant une puissance de traitement suffisante pour les besoins de la robotique. Pour la gestion des tâches complexes liées à la navigation, j'ai utilisé <strong><a href="https://fr.wikipedia.org/wiki/Robot_Operating_System" class="text-blue-400 hover:underline">ROS 2 (Robot Operating System)</a></strong>, un système d'exploitation robuste permettant de traiter efficacement la localisation et la cartographie en temps réel (SLAM). Grâce à cette architecture logicielle, le robot peut prendre des décisions en fonction de son environnement et effectuer des trajets optimisés dans un espace inconnu.
+                Ce projet avait pour objectif de concevoir une cuve capable de stocker du bois tout en maintenant une température réglable. Le système repose sur une électronique précise combinant une <strong>thermo-résistance</strong> et des circuits basés sur des <a href="https://fr.wikipedia.org/wiki/Amplificateur_op%C3%A9rationnel" class="text-blue-400 hover:underline">amplificateurs opérationnels (AOPs)</a>. En fonction des variations de température, le système pouvait activer automatiquement un chauffage ou un ventilateur, garantissant des conditions optimales pour le stockage du bois.
             </p>
 
-            <!-- Image LiDAR (remplacez l'URL par votre chemin local) -->
             <div class="text-center">
-                <img src="images/lidar.jpg" alt="Image LiDAR" class="mx-auto mt-8" style="max-width: 500px;">
+                <img src="images/cuve_circuit.jpg" alt="Circuit de la cuve" class="mx-auto mt-8" style="max-width: 500px;">
+                <p class="text-gray-400 mt-2">Schéma électronique du système de régulation thermique.</p>
             </div>
 
             <div class="flex items-center space-x-4">
-                <span class="text-3xl">🔌</span>
-                <h3 class="text-2xl font-semibold text-gray-100">Schéma électronique et protection de la Raspberry Pi</h3>
+                <span class="text-3xl">🔢</span>
+                <h3 class="text-2xl font-semibold text-gray-100">Affichage et contrôle</h3>
             </div>
             <p class="text-gray-400">
-                Une des étapes cruciales de ce projet a été la conception du schéma électronique qui assure la sécurité et la performance du robot. Le <strong>Raspberry Pi</strong> contrôle les moteurs du robot via des <strong><a href="https://fr.wikipedia.org/wiki/Pont_en_H" class="text-blue-400 hover:underline">ponts en H</a></strong>, qui permettent une commande bidirectionnelle des moteurs à courant continu. Ces ponts en H sont nécessaires pour que le robot puisse se déplacer avant, arrière et changer de direction. Cependant, les moteurs de puissance élevée génèrent des courants qui peuvent endommager les circuits fragiles du Raspberry Pi. Pour éviter cela, des <strong><a href="https://fr.wikipedia.org/wiki/Optocoupleur" class="text-blue-400 hover:underline">optocoupleurs</a></strong> ont été intégrés dans le circuit. Ces composants servent d'isolateurs électriques entre les circuits de commande et le Raspberry Pi, permettant ainsi de protéger la carte contre les surtensions et de réduire le risque de défaillance. L'optocoupleur transmet les signaux électriques de manière optique, ce qui évite tout contact direct entre le Raspberry Pi et les moteurs puissants, assurant une longue durée de vie au matériel.
+                Une partie importante du projet était la mise en place d'un affichage permettant de suivre la température en temps réel. Le système convertissait la tension de la thermo-résistance en degrés Celsius avec une correspondance simple : <strong>0,2 V = 2 °C</strong>. Cela a été rendu possible grâce à des circuits amplificateurs précis et une calibration fine des capteurs.
             </p>
 
-            <!-- Image Optocoupleur (remplacez l'URL par votre chemin local) -->
             <div class="text-center">
-                <img src="images/optocoupleur.jpg" alt="Schéma Optocoupleur" class="mx-auto mt-8" style="max-width: 500px;">
-                <p class="text-gray-400 mt-2">Schéma illustrant un circuit avec optocoupleur utilisé pour l'isolation électrique.</p>
+                <img src="images/cuve_affichage.jpg" alt="Affichage de la température" class="mx-auto mt-8" style="max-width: 500px;">
+                <p class="text-gray-400 mt-2">Affichage permettant de visualiser la température réelle dans la cuve.</p>
             </div>
 
             <div class="flex items-center space-x-4">
-                <span class="text-3xl">⚙️</span>
-                <h3 class="text-2xl font-semibold text-gray-100">Mise en place de ROS 2</h3>
+                <span class="text-3xl">⚖️</span>
+                <h3 class="text-2xl font-semibold text-gray-100">Armoires électriques et gestion de puissance</h3>
             </div>
             <p class="text-gray-400">
-                Enfin, j'ai utilisé <strong><a href="https://fr.wikipedia.org/wiki/Robot_Operating_System" class="text-blue-400 hover:underline">ROS 2</a></strong> pour faciliter la gestion du robot et sa navigation. ROS 2 permet de gérer efficacement les différents capteurs du robot et de coordonner leur interaction pour une navigation fluide. En particulier, il permet de gérer la localisation, la cartographie et la gestion des mouvements en temps réel, ce qui est crucial pour l'autonomie et la précision du robot.
+                Le projet comprenait également la conception et l'assemblage d'une <strong>armoire électrique</strong>, regroupant les éléments de puissance et de commande. Cette partie du projet permettait de relier les différents composants électroniques et mécaniques en un système cohérent et sécurisé. Bien que cette partie était moins passionnante, elle était essentielle pour garantir le bon fonctionnement global de la cuve.
             </p>
 
-            <!-- Image ROS2 (remplacez l'URL par votre chemin local) -->
             <div class="text-center">
-                <img src="images/ros2.jpg" alt="Image ROS 2" class="mx-auto mt-8" style="max-width: 500px;">
+                <img src="images/cuve_armoire.jpg" alt="Armoire électrique" class="mx-auto mt-8" style="max-width: 500px;">
+                <p class="text-gray-400 mt-2">Armoire électrique regroupant les circuits de puissance et de commande.</p>
             </div>
-
-
-            <div class="flex items-center space-x-4">
-                <span class="text-3xl">🔧</span>
-                <h3 class="text-2xl font-semibold text-gray-100">Défis rencontrés et solutions</h3>
-            </div>
-            <p class="text-gray-400">
-                Au cours du développement, plusieurs défis techniques ont été rencontrés, notamment la gestion de la puissance et l'interfaçage entre le Raspberry Pi et les composants de puissance. L'une des premières solutions a été l'intégration des <strong><a href="https://fr.wikipedia.org/wiki/Optocoupleur" class="text-blue-400 hover:underline">optocoupleurs</a></strong>, qui ont permis de protéger le Raspberry Pi des courants élevés générés par les moteurs. En parallèle, la programmation du <strong><a href="https://fr.wikipedia.org/wiki/Robot_Operating_System" class="text-blue-400 hover:underline">ROS 2</a></strong> a présenté des défis de synchronisation entre les capteurs, mais grâce à une gestion avancée des messages et des services dans ROS, ces problèmes ont été surmontés. Un autre défi majeur a été de créer une carte de l'environnement en temps réel avec la technologie <strong><a href="https://fr.wikipedia.org/wiki/SLAM" class="text-blue-400 hover:underline">SLAM</a></strong>, qui nécessite une grande précision dans la détection des obstacles et un traitement rapide des données pour éviter toute perte de localisation. En travaillant sur ces défis, j'ai pu concevoir un robot capable de naviguer de manière autonome, tout en maintenant un contrôle précis et sécurisé des moteurs et des capteurs.
-            </p>
 
         </div>
     </section>
@@ -102,45 +92,42 @@
         <div class="max-w-5xl mx-auto text-left">
             <div class="space-y-8">
                 <div class="flex items-center space-x-4">
-                    <span class="text-3xl">🖥️</span>
-                    <h3 class="text-2xl font-semibold text-gray-100">Programmation et développement logiciel</h3>
-                </div>
-                <p class="text-gray-400">
-                    La programmation a été un élément essentiel de ce projet, en particulier pour le développement de la logique de navigation et d’interaction avec les capteurs. L’utilisation de <strong>ROS 2</strong> m’a permis de structurer le code et d’optimiser la communication entre les différents modules du robot. Le langage <strong>Python</strong> a été utilisé pour la majorité de la programmation, facilitant la gestion des capteurs et la prise de décision en temps réel. Cette compétence a été cruciale pour rendre le robot autonome et réactif.
-                </p>
-
-                <div class="flex items-center space-x-4">
                     <span class="text-3xl">🔌</span>
-                    <h3 class="text-2xl font-semibold text-gray-100">Électronique et conception de circuits</h3>
+                    <h3 class="text-2xl font-semibold text-gray-100">Conception de circuits électroniques</h3>
                 </div>
                 <p class="text-gray-400">
-                    La conception du schéma électronique a impliqué la création de circuits pour la commande des moteurs, l’intégration de ponts en H, et l’utilisation d’optocoupleurs pour la protection du Raspberry Pi. Cette compétence m'a permis de m'assurer que l’ensemble des composants électroniques fonctionnent ensemble de manière sécurisée et efficace, tout en répondant aux exigences de puissance du robot.
-                </p>
-
-                <div class="flex items-center space-x-4">
-                    <span class="text-3xl">🛰️</span>
-                    <h3 class="text-2xl font-semibold text-gray-100">Traitement des capteurs et navigation autonome</h3>
+                    La conception des circuits utilisant des AOPs et des capteurs thermiques a été essentielle pour garantir une régulation précise de la température. Cela a inclus la calibration des capteurs et l'intégration de circuits amplificateurs pour convertir les signaux analogiques en données utilisables par le système. Cette compétence a permis de garantir une mesure fiable et un contrôle précis des températures dans la cuve.</p>
+                    <div class="flex items-center space-x-4">
+                        <span class="text-3xl">⚙️</span>
+                        <h3 class="text-2xl font-semibold text-gray-100">Automatisation et régulation</h3>
+                    </div>
+                    <p class="text-gray-400">
+                        La gestion automatique des chauffages et ventilateurs selon les variations de température a nécessité une compréhension approfondie des principes d’automatisation et de régulation. La logique de fonctionnement a été programmée pour répondre rapidement aux changements dans l’environnement, tout en optimisant l’efficacité énergétique.
+                    </p>
+        
+                    <div class="flex items-center space-x-4">
+                        <span class="text-3xl">🛠️</span>
+                        <h3 class="text-2xl font-semibold text-gray-100">Assemblage et intégration</h3>
+                    </div>
+                    <p class="text-gray-400">
+                        L'assemblage de l'armoire électrique et l'intégration des circuits de commande et de puissance ont constitué une étape clé pour connecter tous les éléments du système. Cette compétence a permis de transformer les concepts théoriques en un système fonctionnel et fiable.
+                    </p>
                 </div>
-                <p class="text-gray-400">
-                    Le traitement des données des capteurs et la gestion de la navigation autonome ont été des compétences clés. L’intégration de capteurs LiDAR, infrarouges, et ultrasons, combinée à la technologie SLAM, m’a permis de créer une cartographie en temps réel de l’environnement du robot. Cette compétence a été déterminante pour la réussite du projet, permettant au robot de se déplacer de manière intelligente et autonome.
-                </p>
             </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-700 text-gray-200 text-center py-6">
-        <p>&copy; 2024 Olivier. Tous droits réservés.</p>
-    </footer>
-
-    <!-- Import AOS Script -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1000,
-            once: true,
-        });
-    </script>
-</body>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="bg-gray-700 text-gray-200 text-center py-6">
+            <p>&copy; 2024 Olivier. Tous droits réservés.</p>
+        </footer>
+        
+        <!-- Import AOS Script -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1000,
+                once: true,
+            });
+        </script>
+    </body>
 </html>
-
