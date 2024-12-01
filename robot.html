@@ -19,9 +19,7 @@
         <h1 class="text-2xl font-bold">Projet : Robot roulant</h1>
         <ul class="flex space-x-6">
           <li>
-            <a href="index.html#robot" class="hover:text-gray-400"
-              >Retour à l'accueil</a
-            >
+            <a href="index.html#robot" class="hover:text-gray-400">Retour à l'accueil</a>
           </li>
         </ul>
       </nav>
@@ -33,245 +31,142 @@
       class="h-screen bg-gradient-to-br from-gray-800 to-gray-600 text-gray-100 flex items-center justify-center text-center"
     >
       <div data-aos="fade-up">
-        <h2 class="text-4xl md:text-6xl font-bold mb-6">
-          Projet de Barrière Automatique
-        </h2>
+        <h2 class="text-4xl md:text-6xl font-bold mb-6">Projet de Robot Autonome</h2>
         <p class="text-lg md:text-2xl mb-6">
-          Développement d'un système automatisé pour le contrôle d'accès avec
-          gestion électronique et logicielle.
+          Conception et réalisation d'un robot roulant intégrant une carte électronique et un contrôle via PWM.
         </p>
       </div>
     </section>
 
     <!-- Description du Projet -->
-    <section class="py-20 bg-gray-900" id="projet-aspirateur">
+    <section class="py-20 bg-gray-900" id="projet-robot">
       <div class="max-w-7xl mx-auto text-center" data-aos="fade-up">
         <h2 class="text-3xl font-bold text-gray-100">Présentation du Projet</h2>
         <p class="text-gray-400 mt-4 mb-12">
-          Voici les détails techniques et les étapes de réalisation du projet de
-          barrière automatique.
+          Voici les étapes techniques et les détails de la réalisation de notre robot autonome.
         </p>
       </div>
 
       <div class="max-w-5xl mx-auto space-y-10 text-left">
+        <!-- CAO Section -->
         <div class="flex items-center space-x-4">
-          <span class="text-3xl">🚧</span>
-          <h3 class="text-2xl font-semibold text-gray-100">
-            Réalisation du projet
-          </h3>
+          <span class="text-3xl">📐</span>
+          <h3 class="text-2xl font-semibold text-gray-100">Conception en CAO</h3>
         </div>
         <p class="text-gray-400">
-          Le projet de barrière automatique a été conçu pour automatiser le
-          contrôle d'accès à une zone sécurisée. Le cœur du système repose sur
-          un
-          <strong
-            ><a
-              href="https://fr.wikipedia.org/wiki/Automate_programmable_industriel"
-              target="_blank"
-              class="text-blue-400"
-              >automate Zelio</a
-            ></strong
-          >, un type d'<a
-            href="https://fr.wikipedia.org/wiki/Automate_programmable_industriel"
-            target="_blank"
-            class="text-blue-400"
-            >automate programmable industriel (API)</a
-          >, qui gère les commandes de montée et descente de la barrière en
-          fonction des signaux envoyés par des capteurs (infrarouges ou à
-          ultrasons) détectant la présence d'un véhicule. Les capteurs
-          infrarouges ou à ultrasons sont utilisés pour détecter la distance et
-          la présence d'obstacles, garantissant ainsi une ouverture ou une
-          fermeture précise de la barrière en toute sécurité. <br /><br />
-          Un autre aspect clé de ce projet est la mise en place d'un
-          <strong
-            ><a
-              href="https://fr.wikipedia.org/wiki/Syst%C3%A8me_de_contr%C3%B4le_de_processus#Automates_programmables_industriels"
-              target="_blank"
-              class="text-blue-400"
-              >système de contrôle</a
-            ></strong
-          >, qui assure une gestion électronique fiable et sécurisée. Ce système
-          peut également inclure des mécanismes d'interruption d'urgence pour
-          éviter des accidents et garantir la sécurité des usagers.
+          La première étape de ce projet consistait à réaliser la conception assistée par ordinateur (CAO) du robot. Cette
+          étape a permis de modéliser précisément la structure et les différents composants nécessaires à la fabrication.
+          En utilisant des outils comme SolidWorks, nous avons créé une représentation 3D complète du robot, incluant les
+          emplacements pour la carte électronique et les moteurs. Ce modèle a servi de base pour guider les étapes
+          suivantes et éviter les erreurs lors de l'assemblage.
         </p>
 
-        <!-- Image Zelio (remplacez l'URL par votre chemin local) -->
         <div class="text-center">
-          <img
-            src="images/zelio_barriere.jpg"
-            alt="Automate Zelio"
-            class="mx-auto mt-8"
-            style="max-width: 500px"
-          />
+          <img src="chemin/vers/ton/image-cao.jpg" alt="Conception en CAO" class="mx-auto block my-6 w-1/2">
+          <p class="text-gray-400 text-sm mt-2">Modélisation 3D du robot avec SolidWorks</p>
         </div>
 
-        <div class="flex items-center space-x-4">
-          <span class="text-3xl">📋</span>
-          <h3 class="text-2xl font-semibold text-gray-100">
-            Conception du Grafcet
-          </h3>
-        </div>
-        <p class="text-gray-400">
-          Une étape essentielle de ce projet a été la conception du
-          <strong
-            ><a
-              href="https://fr.wikipedia.org/wiki/GRAFCET"
-              target="_blank"
-              class="text-blue-400"
-              >Grafcet</a
-            ></strong
-          >, un diagramme qui décrit le fonctionnement logique de la barrière.
-          Le Grafcet permet de représenter visuellement les étapes et les
-          transitions du système, garantissant une exécution correcte des
-          processus. Ce diagramme assure que toutes les transitions entre les
-          états (montée, descente, arrêt) sont correctement synchronisées avec
-          les signaux des capteurs et les commandes de l'utilisateur, permettant
-          ainsi de mieux comprendre la logique de fonctionnement du système
-          automatisé. <br /><br />
-          Le Grafcet est un outil largement utilisé dans l'automatisation
-          industrielle pour la gestion des processus. Il est basé sur un
-          ensemble de règles logiques et de séquences d'actions, ce qui facilite
-          la compréhension et l'implémentation des systèmes de contrôle
-          complexe.
-        </p>
-
-        <!-- Image Grafcet (remplacez l'URL par votre chemin local) -->
-
-        <div class="flex items-center space-x-4">
-          <span class="text-3xl">⚙️</span>
-          <h3 class="text-2xl font-semibold text-gray-100">Montage et tests</h3>
-        </div>
-        <p class="text-gray-400">
-          Le montage physique de la barrière a nécessité la création d'une
-          maquette fonctionnelle avec des composants robotiques, y compris un
-          moteur contrôlant le mouvement de la barrière. Le moteur est relié à
-          l'automate Zelio pour activer les mouvements d'ouverture et de
-          fermeture de la barrière.
-          <strong
-            ><a
-              href="https://fr.wikipedia.org/wiki/Moteur_%C3%A9lectrique"
-              target="_blank"
-              class="text-blue-400"
-              >Les moteurs électriques</a
-            ></strong
-          >
-          utilisés dans ce type de projet sont cruciaux pour assurer un
-          mouvement fluide et précis de la barrière. Des tests ont été effectués
-          pour valider la robustesse du système, notamment sa capacité à réagir
-          rapidement à des anomalies comme une interruption brusque ou la
-          détection d'un obstacle pendant le mouvement. <br /><br />
-          Ces tests sont essentiels pour s'assurer de la sécurité du système et
-          de son bon fonctionnement sur le long terme. Chaque composant a été
-          soigneusement intégré pour garantir une fiabilité optimale dans toutes
-          les situations possibles.
-        </p>
-
-        <!-- Image Maquette (remplacez l'URL par votre chemin local) -->
-
+        <!-- Fabrication Section -->
         <div class="flex items-center space-x-4">
           <span class="text-3xl">🔧</span>
-          <h3 class="text-2xl font-semibold text-gray-100">
-            Défis rencontrés et solutions
-          </h3>
+          <h3 class="text-2xl font-semibold text-gray-100">Fabrication et soudure</h3>
         </div>
         <p class="text-gray-400">
-          L'un des principaux défis techniques a été d'assurer une
-          synchronisation parfaite entre les capteurs et les commandes de
-          l'automate. La
-          <strong
-            ><a
-              href="https://fr.wikipedia.org/wiki/Capteur"
-              target="_blank"
-              class="text-blue-400"
-              >synchronicité des capteurs</a
-            ></strong
-          >
-          est primordiale pour garantir une détection correcte des obstacles et
-          une action précise de la barrière. Cela a nécessité des ajustements
-          fins dans le programme de l'automate pour éviter des comportements
-          erratiques ou non sécurisés. <br /><br />
-          De plus, l'intégration des capteurs infrarouges a demandé une
-          calibration minutieuse pour éviter les fausses détections dues aux
-          variations de lumière ambiante. Un défi supplémentaire a été de
-          garantir que la barrière s'ouvre ou se ferme de manière fiable en
-          toutes conditions, ce qui a été résolu grâce à des tests approfondis
-          et des ajustements continus du système.
+          Une fois la conception validée, nous avons procédé à l'impression des cartes électroniques à partir de nos
+          schémas. Ces cartes ont été soigneusement assemblées en soudant les composants nécessaires, tels que les
+          microcontrôleurs, les résistances et les condensateurs. Cette étape a demandé une grande précision pour assurer
+          un fonctionnement optimal et éviter les courts-circuits. Chaque carte a été testée individuellement avant d'être
+          intégrée au robot.
         </p>
+
+        <div class="text-center">
+          <img src="chemin/vers/ton/image-soudure.jpg" alt="Fabrication et soudure" class="mx-auto block my-6 w-1/2">
+          <p class="text-gray-400 text-sm mt-2">Soudure des composants sur la carte électronique</p>
+        </div>
+
+        <!-- Tests and Debugging Section -->
+        <div class="flex items-center space-x-4">
+          <span class="text-3xl">🛠️</span>
+          <h3 class="text-2xl font-semibold text-gray-100">Tests et débogage</h3>
+        </div>
+        <p class="text-gray-400">
+          Après l'assemblage, nous avons procédé à une série de tests approfondis pour identifier et corriger les éventuels
+          bugs. Les tests incluaient la vérification des signaux sur les broches de la carte, le contrôle de la continuité
+          électrique, et l'exécution de programmes de diagnostic. Ces étapes étaient essentielles pour garantir la
+          fiabilité du système avant son intégration finale.
+        </p>
+
+        <div class="text-center">
+          <img src="chemin/vers/ton/image-tests.jpg" alt="Tests et débogage" class="mx-auto block my-6 w-1/2">
+          <p class="text-gray-400 text-sm mt-2">Test de la carte électronique et des composants</p>
+        </div>
+
+        <!-- Integration Section -->
+        <div class="flex items-center space-x-4">
+          <span class="text-3xl">🤖</span>
+          <h3 class="text-2xl font-semibold text-gray-100">Intégration et fonctionnement</h3>
+        </div>
+        <p class="text-gray-400">
+          Une fois les tests terminés, nous avons fixé la carte électronique sur le robot roulant fourni par les
+          professeurs. Le robot a été programmé pour se déplacer en fonction des commandes envoyées, avec une modulation de
+          la vitesse contrôlée par le signal PWM. Grâce à ce système, il était possible d'ajuster précisément la vitesse de
+          déplacement en fonction des besoins, garantissant une flexibilité optimale pour les démonstrations.
+        </p>
+
+        <div class="text-center">
+          <img src="chemin/vers/ton/image-integration.jpg" alt="Intégration et fonctionnement" class="mx-auto block my-6 w-1/2">
+          <p class="text-gray-400 text-sm mt-2">Intégration de la carte dans le robot et tests de mouvement</p>
+        </div>
       </div>
     </section>
 
-    <!-- Compétences utilisées dans le projet -->
+    <!-- Compétences Utilisées -->
     <section class="py-20 bg-gray-800" id="competences">
       <div class="max-w-7xl mx-auto text-center" data-aos="fade-up">
-        <h2 class="text-3xl font-bold text-gray-100">
-          Compétences utilisées dans le projet
-        </h2>
+        <h2 class="text-3xl font-bold text-gray-100">Compétences Utilisées</h2>
         <p class="text-gray-400 mt-4 mb-12">
-          Voici les principales compétences développées et utilisées lors de la
-          réalisation de ce projet.
+          Voici les compétences techniques que j'ai utilisées pour mener à bien ce projet de robot autonome.
         </p>
       </div>
 
-      <div class="max-w-5xl mx-auto text-left">
-        <div class="space-y-8">
-          <div class="flex items-center space-x-4">
-            <span class="text-3xl">🖥️</span>
-            <h3 class="text-2xl font-semibold text-gray-100">
-              Programmation d'automates
-            </h3>
-          </div>
-          <p class="text-gray-400">
-            La programmation de l'<a
-              href="https://fr.wikipedia.org/wiki/Automate_programmable_industriel"
-              target="_blank"
-              class="text-blue-400"
-              >automate Zelio</a
-            >
-            a constitué un élément central de ce projet. En utilisant un langage
-            de programmation <strong>Ladder</strong>, j'ai pu développer une
-            logique fiable pour le fonctionnement automatique de la barrière. Le
-            <a
-              href="https://fr.wikipedia.org/wiki/Ladder_(langage)"
-              target="_blank"
-              class="text-blue-400"
-              >Ladder</a
-            >
-            est un langage graphique souvent utilisé pour programmer les
-            automates industriels, en particulier dans des systèmes comme
-            celui-ci qui nécessitent des interventions de sécurité et une
-            logique simple et fiable.
-          </p>
-
-          <div class="flex items-center space-x-4">
-            <span class="text-3xl">📐</span>
-            <h3 class="text-2xl font-semibold text-gray-100">
-              Conception et schématisation
-            </h3>
-          </div>
-          <p class="text-gray-400">
-            La conception des schémas électriques et du Grafcet a permis de
-            structurer et de documenter le projet. Ces outils ont été essentiels
-            pour garantir que toutes les étapes de la réalisation soient
-            alignées et compréhensibles pour l'équipe. Les schémas électriques
-            sont un élément clé pour visualiser et résoudre les problèmes
-            potentiels pendant le montage et les tests.
-          </p>
-
-          <div class="flex items-center space-x-4">
-            <span class="text-3xl">🔍</span>
-            <h3 class="text-2xl font-semibold text-gray-100">
-              Tests et optimisation
-            </h3>
-          </div>
-          <p class="text-gray-400">
-            Des tests rigoureux ont été effectués pour valider le bon
-            fonctionnement de la barrière. L'optimisation des capteurs et des
-            circuits de commande a permis de garantir la stabilité et la
-            sécurité du système sur le long terme. Ces tests ont permis
-            d'identifier et de résoudre les défis techniques en cours de
-            développement, assurant ainsi un système opérationnel fiable.
-          </p>
+      <div class="max-w-5xl mx-auto space-y-10 text-left">
+        <!-- KiCad Section -->
+        <div class="flex items-center space-x-4">
+          <span class="text-3xl">🖥️</span>
+          <h3 class="text-2xl font-semibold text-gray-100">Conception de la carte électronique avec KiCad</h3>
         </div>
+        <p class="text-gray-400">
+          KiCad a été un outil essentiel pour concevoir le schéma de la carte électronique. Grâce à ce logiciel open-source,
+          j'ai pu réaliser le routage des composants, la création de la carte PCB et la vérification des connexions. KiCad m'a
+          permis de produire un design propre et professionnel, facilitant ainsi l'assemblage et les tests de la carte.
+        </p>
+
+        <div class="text-center">
+          <img src="chemin/vers/ton/image-kicad.jpg" alt="Conception avec KiCad" class="mx-auto block my-6 w-1/2">
+          <p class="text-gray-400 text-sm mt-2">Conception de la carte électronique dans KiCad</p>
+        </div>
+
+        <!-- Soudure et Assemblage Section -->
+        <div class="flex items-center space-x-4">
+          <span class="text-3xl">🔧</span>
+          <h3 class="text-2xl font-semibold text-gray-100">Soudure et Assemblage</h3>
+        </div>
+        <p class="text-gray-400">
+          La soudure des composants sur la carte électronique était cruciale pour assurer un bon fonctionnement du robot. J'ai
+          appris à manipuler les équipements nécessaires pour effectuer des soudures précises, à tester les connexions et à
+          valider la qualité du travail effectué avant l'intégration.
+        </p>
+
+        <!-- Programmation Section -->
+        <div class="flex items-center space-x-4">
+          <span class="text-3xl">💻</span>
+          <h3 class="text-2xl font-semibold text-gray-100">Programmation du Robot</h3>
+        </div>
+        <p class="text-gray-400">
+          La programmation du robot a impliqué l'utilisation de scripts Python pour gérer les moteurs via des signaux PWM.
+          J'ai écrit et testé des algorithmes permettant au robot de se déplacer de manière autonome et d'effectuer des tâches
+          précises en fonction des entrées reçues.
+        </p>
       </div>
     </section>
 
