@@ -1,132 +1,276 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projet : Cuve de Stockage</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-        }
+      body {
+        font-family: "Poppins", sans-serif;
+      }
     </style>
-</head>
-<body class="bg-gray-900 text-gray-200">
-
+  </head>
+  <body class="bg-gray-900 text-gray-200">
     <!-- Navbar -->
     <header class="bg-gray-800 text-gray-200 fixed w-full z-10 shadow-lg">
-        <nav class="max-w-7xl mx-auto p-4 flex justify-between items-center">
-            <h1 class="text-2xl font-bold">Projet : Cuve de Stockage</h1>
-            <ul class="flex space-x-6">
-                <li><a href="index.html#cuve" class="hover:text-gray-400">Retour à l'accueil</a></li>
-            </ul>
-        </nav>
+      <nav class="max-w-7xl mx-auto p-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Projet : Cuve de Stockage</h1>
+        <ul class="flex space-x-6">
+          <li>
+            <a href="index.html#cuve" class="hover:text-gray-400"
+              >Retour à l'accueil</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="h-screen bg-gradient-to-br from-gray-800 to-gray-600 text-gray-100 flex items-center justify-center text-center">
-        <div data-aos="fade-up">
-            <h2 class="text-4xl md:text-6xl font-bold mb-6">Projet de Cuve de Stockage</h2>
-            <p class="text-lg md:text-2xl mb-6">Système automatisé pour maintenir le bois à une température réglable avec gestion électronique et électrique.</p>
-        </div>
+    <section
+      id="home"
+      class="h-screen bg-gradient-to-br from-gray-800 to-gray-600 text-gray-100 flex items-center justify-center text-center"
+    >
+      <div data-aos="fade-up">
+        <h2 class="text-4xl md:text-6xl font-bold mb-6">
+          Projet de Cuve de Stockage
+        </h2>
+        <p class="text-lg md:text-2xl mb-6">
+          Système automatisé pour maintenir le bois à une température réglable
+          avec gestion électronique et électrique.
+        </p>
+      </div>
     </section>
 
     <!-- Description du Projet -->
     <section class="py-20 bg-gray-900" id="projet-cuve">
-        <div class="max-w-7xl mx-auto text-center" data-aos="fade-up">
-            <h2 class="text-3xl font-bold text-gray-100">Présentation du Projet</h2>
-            <p class="text-gray-400 mt-4 mb-12">Voici les détails techniques et les étapes de réalisation du projet de cuve de stockage réglable.</p>
+      <div class="max-w-7xl mx-auto text-center" data-aos="fade-up">
+        <h2 class="text-3xl font-bold text-gray-100">Présentation du Projet</h2>
+        <p class="text-gray-400 mt-4 mb-12">
+          Voici les détails techniques et les étapes de réalisation du projet de
+          cuve de stockage réglable.
+        </p>
+      </div>
+
+      <div class="max-w-5xl mx-auto space-y-10 text-left">
+        <div class="flex items-center space-x-4">
+          <span class="text-3xl">🔒</span>
+          <h3 class="text-2xl font-semibold text-gray-100">
+            Réalisation du projet
+          </h3>
+        </div>
+        <p class="text-gray-400">
+          Ce projet visait à concevoir une cuve spécialisée pour le stockage du
+          bois, avec un système intégré permettant de maintenir une température
+          contrôlable en fonction des besoins. La cuve devait non seulement
+          garantir une conservation optimale du bois, mais aussi s’adapter
+          automatiquement aux fluctuations de température externes. Le cœur du
+          système repose sur une électronique de précision, utilisant une
+          <a
+            href="https://fr.wikipedia.org/wiki/Termor%C3%A9sistance"
+            class="text-blue-400 hover:underline"
+            >thermo-résistance</a
+          >
+          pour mesurer la température à l'intérieur de la cuve, couplée à des
+          circuits sophistiqués intégrant des
+          <a
+            href="https://fr.wikipedia.org/wiki/Amplificateur_op%C3%A9rationnel"
+            class="text-blue-400 hover:underline"
+            >amplificateurs opérationnels (AOPs)</a
+          >, qui permettent de réguler finement la température. En fonction des
+          données collectées par la thermo-résistance, le système est capable
+          d’activer de manière autonome des éléments chauffants ou des
+          ventilateurs. Ainsi, il s'assure que la température reste stable et
+          adéquate pour le bois, quel que soit l'environnement extérieur. Cette
+          régulation automatique assure non seulement la qualité du bois stocké
+          mais optimise également la consommation d'énergie en ajustant les
+          mécanismes de chauffage et de refroidissement selon les besoins réels
+          de la cuve.
+        </p>
+        <div class="text-center">
+          <img
+            src="images/cuve_circuit.jpg"
+            alt="Circuit de la cuve"
+            class="mx-auto mt-8"
+            style="max-width: 500px"
+          />
+          <p class="text-gray-400 mt-2">
+            Schéma électronique du système de régulation thermique.
+          </p>
         </div>
 
-        <div class="max-w-5xl mx-auto space-y-10 text-left">
-            <div class="flex items-center space-x-4">
-                <span class="text-3xl">🔒</span>
-                <h3 class="text-2xl font-semibold text-gray-100">Réalisation du projet</h3>
-            </div>
-            <p class="text-gray-400">
-                Ce projet visait à concevoir une cuve spécialisée pour le stockage du bois, avec un système intégré permettant de maintenir une température contrôlable en fonction des besoins. La cuve devait non seulement garantir une conservation optimale du bois, mais aussi s’adapter automatiquement aux fluctuations de température externes. Le cœur du système repose sur une électronique de précision, utilisant une <a href="https://fr.wikipedia.org/wiki/Termor%C3%A9sistance" class="text-blue-400 hover:underline">thermo-résistance</a> pour mesurer la température à l'intérieur de la cuve, couplée à des circuits sophistiqués intégrant des <a href="https://fr.wikipedia.org/wiki/Amplificateur_op%C3%A9rationnel" class="text-blue-400 hover:underline">amplificateurs opérationnels (AOPs)</a>, qui permettent de réguler finement la température. En fonction des données collectées par la thermo-résistance, le système est capable d’activer de manière autonome des éléments chauffants ou des ventilateurs. Ainsi, il s'assure que la température reste stable et adéquate pour le bois, quel que soit l'environnement extérieur. Cette régulation automatique assure non seulement la qualité du bois stocké mais optimise également la consommation d'énergie en ajustant les mécanismes de chauffage et de refroidissement selon les besoins réels de la cuve.
-            </p>
-            <div class="text-center">
-                <img src="images/cuve_circuit.jpg" alt="Circuit de la cuve" class="mx-auto mt-8" style="max-width: 500px;">
-                <p class="text-gray-400 mt-2">Schéma électronique du système de régulation thermique.</p>
-            </div>
-
-            <div class="flex items-center space-x-4">
-                <span class="text-3xl">🔢</span>
-                <h3 class="text-2xl font-semibold text-gray-100">Affichage et contrôle</h3>
-            </div>
-            <p class="text-gray-400">
-                Une partie importante du projet était la mise en place d'un affichage permettant de suivre la température en temps réel, afin d'offrir une surveillance constante et précise des conditions de stockage du bois. Ce système d'affichage permettait non seulement de visualiser la température actuelle, mais aussi de suivre son évolution au fil du temps. Le système convertissait la tension de la <a href="https://fr.wikipedia.org/wiki/Termor%C3%A9sistance" class="text-blue-400 hover:underline">thermo-résistance</a> en degrés Celsius à l'aide d'une relation simple : <strong>0,2 V = 2 °C</strong>. Cette correspondance a été choisie pour sa simplicité et son efficacité, permettant une lecture facile et rapide des données. Pour garantir la précision de la conversion, des <a href="https://fr.wikipedia.org/wiki/Amplificateur_op%C3%A9rationnel" class="text-blue-400 hover:underline">amplificateurs opérationnels (AOPs)</a> ont été utilisés pour amplifer le signal de la thermo-résistance, assurant ainsi une lecture stable et fiable de la température. De plus, une calibration fine des capteurs a été réalisée pour compenser toute dérive ou imprécision, permettant d’obtenir des mesures aussi exactes que possible. Cette étape de calibration était cruciale pour garantir que l’affichage reflétait toujours avec précision la température réelle à l’intérieur de la cuve, optimisant ainsi les conditions de stockage et évitant les risques liés à des variations thermiques non contrôlées.
-            </p>
-
-            <div class="text-center">
-                <img src="images/cuve_affichage.jpg" alt="Affichage de la température" class="mx-auto mt-8" style="max-width: 500px;">
-                <p class="text-gray-400 mt-2">Affichage permettant de visualiser la température réelle dans la cuve.</p>
-            </div>
-
-            <div class="flex items-center space-x-4">
-                <span class="text-3xl">⚖️</span>
-                <h3 class="text-2xl font-semibold text-gray-100">Armoires électriques et gestion de puissance</h3>
-            </div>
-            <p class="text-gray-400">
-                Le projet comprenait également la conception et l'assemblage d'une <a href="https://fr.wikipedia.org/wiki/Armoire_%C3%A9lectrique" class="text-blue-400 hover:underline">armoire électrique</a>, regroupant les éléments de puissance et de commande. Cette armoire avait pour but de centraliser l'ensemble des composants nécessaires au bon fonctionnement du système, y compris les alimentations, les relais, ainsi que les dispositifs de sécurité. En permettant de relier les différents éléments électroniques et mécaniques de manière organisée et sécurisée, elle jouait un rôle crucial dans la gestion des flux électriques et la protection des circuits contre les courts-circuits ou les surcharges. L'armoire était équipée de dispositifs de contrôle permettant de surveiller les états des différents composants, assurant ainsi une gestion optimale du système. Bien que cette partie du projet n’ait pas été aussi captivante sur le plan technique que la partie sensorielle ou algorithmique, elle était néanmoins essentielle. Sans une armoire électrique bien conçue et correctement montée, l’ensemble du système n’aurait pas pu fonctionner de manière fiable et sécurisée. C’était un aspect du projet qui garantissait le bon fonctionnement global de la cuve, tout en permettant un accès facile pour les interventions futures et les maintenances nécessaires.
-            </p>
-
-            <div class="text-center">
-                <img src="images/cuve_armoire.jpg" alt="Armoire électrique" class="mx-auto mt-8" style="max-width: 500px;">
-                <p class="text-gray-400 mt-2">Armoire électrique regroupant les circuits de puissance et de commande.</p>
-            </div>
-
+        <div class="flex items-center space-x-4">
+          <span class="text-3xl">🔢</span>
+          <h3 class="text-2xl font-semibold text-gray-100">
+            Affichage et contrôle
+          </h3>
         </div>
+        <p class="text-gray-400">
+          Une partie importante du projet était la mise en place d'un affichage
+          permettant de suivre la température en temps réel, afin d'offrir une
+          surveillance constante et précise des conditions de stockage du bois.
+          Ce système d'affichage permettait non seulement de visualiser la
+          température actuelle, mais aussi de suivre son évolution au fil du
+          temps. Le système convertissait la tension de la
+          <a
+            href="https://fr.wikipedia.org/wiki/Termor%C3%A9sistance"
+            class="text-blue-400 hover:underline"
+            >thermo-résistance</a
+          >
+          en degrés Celsius à l'aide d'une relation simple :
+          <strong>0,2 V = 2 °C</strong>. Cette correspondance a été choisie pour
+          sa simplicité et son efficacité, permettant une lecture facile et
+          rapide des données. Pour garantir la précision de la conversion, des
+          <a
+            href="https://fr.wikipedia.org/wiki/Amplificateur_op%C3%A9rationnel"
+            class="text-blue-400 hover:underline"
+            >amplificateurs opérationnels (AOPs)</a
+          >
+          ont été utilisés pour amplifer le signal de la thermo-résistance,
+          assurant ainsi une lecture stable et fiable de la température. De
+          plus, une calibration fine des capteurs a été réalisée pour compenser
+          toute dérive ou imprécision, permettant d’obtenir des mesures aussi
+          exactes que possible. Cette étape de calibration était cruciale pour
+          garantir que l’affichage reflétait toujours avec précision la
+          température réelle à l’intérieur de la cuve, optimisant ainsi les
+          conditions de stockage et évitant les risques liés à des variations
+          thermiques non contrôlées.
+        </p>
+
+        <div class="text-center">
+          <img
+            src="images/cuve_affichage.jpg"
+            alt="Affichage de la température"
+            class="mx-auto mt-8"
+            style="max-width: 500px"
+          />
+          <p class="text-gray-400 mt-2">
+            Affichage permettant de visualiser la température réelle dans la
+            cuve.
+          </p>
+        </div>
+
+        <div class="flex items-center space-x-4">
+          <span class="text-3xl">⚖️</span>
+          <h3 class="text-2xl font-semibold text-gray-100">
+            Armoires électriques et gestion de puissance
+          </h3>
+        </div>
+        <p class="text-gray-400">
+          Le projet comprenait également la conception et l'assemblage d'une
+          <a
+            href="https://fr.wikipedia.org/wiki/Armoire_%C3%A9lectrique"
+            class="text-blue-400 hover:underline"
+            >armoire électrique</a
+          >, regroupant les éléments de puissance et de commande. Cette armoire
+          avait pour but de centraliser l'ensemble des composants nécessaires au
+          bon fonctionnement du système, y compris les alimentations, les
+          relais, ainsi que les dispositifs de sécurité. En permettant de relier
+          les différents éléments électroniques et mécaniques de manière
+          organisée et sécurisée, elle jouait un rôle crucial dans la gestion
+          des flux électriques et la protection des circuits contre les
+          courts-circuits ou les surcharges. L'armoire était équipée de
+          dispositifs de contrôle permettant de surveiller les états des
+          différents composants, assurant ainsi une gestion optimale du système.
+          Bien que cette partie du projet n’ait pas été aussi captivante sur le
+          plan technique que la partie sensorielle ou algorithmique, elle était
+          néanmoins essentielle. Sans une armoire électrique bien conçue et
+          correctement montée, l’ensemble du système n’aurait pas pu fonctionner
+          de manière fiable et sécurisée. C’était un aspect du projet qui
+          garantissait le bon fonctionnement global de la cuve, tout en
+          permettant un accès facile pour les interventions futures et les
+          maintenances nécessaires.
+        </p>
+
+        <div class="text-center">
+          <img
+            src="images/cuve_armoire.jpg"
+            alt="Armoire électrique"
+            class="mx-auto mt-8"
+            style="max-width: 500px"
+          />
+          <p class="text-gray-400 mt-2">
+            Armoire électrique regroupant les circuits de puissance et de
+            commande.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- Compétences utilisées dans le projet -->
     <section class="py-20 bg-gray-800" id="competences">
-        <div class="max-w-7xl mx-auto text-center" data-aos="fade-up">
-            <h2 class="text-3xl font-bold text-gray-100">Compétences utilisées dans le projet</h2>
-            <p class="text-gray-400 mt-4 mb-12">Voici les principales compétences développées et utilisées lors de la réalisation de ce projet.</p>
-        </div>
+      <div class="max-w-7xl mx-auto text-center" data-aos="fade-up">
+        <h2 class="text-3xl font-bold text-gray-100">
+          Compétences utilisées dans le projet
+        </h2>
+        <p class="text-gray-400 mt-4 mb-12">
+          Voici les principales compétences développées et utilisées lors de la
+          réalisation de ce projet.
+        </p>
+      </div>
 
-        <div class="max-w-5xl mx-auto text-left">
-            <div class="space-y-8">
-                <div class="flex items-center space-x-4">
-                    <span class="text-3xl">🔌</span>
-                    <h3 class="text-2xl font-semibold text-gray-100">Conception de circuits électroniques</h3>
-                </div>
-                <p class="text-gray-400">
-                    La conception des circuits utilisant des AOPs et des capteurs thermiques a été essentielle pour garantir une régulation précise de la température. Cela a inclus la calibration des capteurs et l'intégration de circuits amplificateurs pour convertir les signaux analogiques en données utilisables par le système. Cette compétence a permis de garantir une mesure fiable et un contrôle précis des températures dans la cuve.</p>
-                    <div class="flex items-center space-x-4">
-                        <span class="text-3xl">⚙️</span>
-                        <h3 class="text-2xl font-semibold text-gray-100">Automatisation et régulation</h3>
-                    </div>
-                    <p class="text-gray-400">
-                        La gestion automatique des chauffages et ventilateurs selon les variations de température a nécessité une compréhension approfondie des principes d’automatisation et de régulation. La logique de fonctionnement a été programmée pour répondre rapidement aux changements dans l’environnement, tout en optimisant l’efficacité énergétique.
-                    </p>
-        
-                    <div class="flex items-center space-x-4">
-                        <span class="text-3xl">🛠️</span>
-                        <h3 class="text-2xl font-semibold text-gray-100">Assemblage et intégration</h3>
-                    </div>
-                    <p class="text-gray-400">
-                        L'assemblage de l'armoire électrique et l'intégration des circuits de commande et de puissance ont constitué une étape clé pour connecter tous les éléments du système. Cette compétence a permis de transformer les concepts théoriques en un système fonctionnel et fiable.
-                    </p>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Footer -->
-        <footer class="bg-gray-700 text-gray-200 text-center py-6">
-            <p>&copy; 2024 Olivier. Tous droits réservés.</p>
-        </footer>
-        
-        <!-- Import AOS Script -->
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init({
-                duration: 1000,
-                once: true,
-            });
-        </script>
-    </body>
+      <div class="max-w-5xl mx-auto text-left">
+        <div class="space-y-8">
+          <div class="flex items-center space-x-4">
+            <span class="text-3xl">🔌</span>
+            <h3 class="text-2xl font-semibold text-gray-100">
+              Conception de circuits électroniques
+            </h3>
+          </div>
+          <p class="text-gray-400">
+            La conception des circuits utilisant des AOPs et des capteurs
+            thermiques a été essentielle pour garantir une régulation précise de
+            la température. Cela a inclus la calibration des capteurs et
+            l'intégration de circuits amplificateurs pour convertir les signaux
+            analogiques en données utilisables par le système. Cette compétence
+            a permis de garantir une mesure fiable et un contrôle précis des
+            températures dans la cuve.
+          </p>
+          <div class="flex items-center space-x-4">
+            <span class="text-3xl">⚙️</span>
+            <h3 class="text-2xl font-semibold text-gray-100">
+              Automatisation et régulation
+            </h3>
+          </div>
+          <p class="text-gray-400">
+            La gestion automatique des chauffages et ventilateurs selon les
+            variations de température a nécessité une compréhension approfondie
+            des principes d’automatisation et de régulation. La logique de
+            fonctionnement a été programmée pour répondre rapidement aux
+            changements dans l’environnement, tout en optimisant l’efficacité
+            énergétique.
+          </p>
+
+          <div class="flex items-center space-x-4">
+            <span class="text-3xl">🛠️</span>
+            <h3 class="text-2xl font-semibold text-gray-100">
+              Assemblage et intégration
+            </h3>
+          </div>
+          <p class="text-gray-400">
+            L'assemblage de l'armoire électrique et l'intégration des circuits
+            de commande et de puissance ont constitué une étape clé pour
+            connecter tous les éléments du système. Cette compétence a permis de
+            transformer les concepts théoriques en un système fonctionnel et
+            fiable.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-700 text-gray-200 text-center py-6">
+      <p>&copy; 2024 Olivier. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Import AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+  </body>
 </html>

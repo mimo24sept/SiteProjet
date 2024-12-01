@@ -1,145 +1,292 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projet : Barrière Automatique</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-        }
+      body {
+        font-family: "Poppins", sans-serif;
+      }
     </style>
-</head>
-<body class="bg-gray-900 text-gray-200">
-
+  </head>
+  <body class="bg-gray-900 text-gray-200">
     <!-- Navbar -->
     <header class="bg-gray-800 text-gray-200 fixed w-full z-10 shadow-lg">
-        <nav class="max-w-7xl mx-auto p-4 flex justify-between items-center">
-            <h1 class="text-2xl font-bold">Projet : Barrière Automatique</h1>
-            <ul class="flex space-x-6">
-                <li><a href="index.html#barriere" class="hover:text-gray-400">Retour à l'accueil</a></li>
-            </ul>
-        </nav>
+      <nav class="max-w-7xl mx-auto p-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Projet : Barrière Automatique</h1>
+        <ul class="flex space-x-6">
+          <li>
+            <a href="index.html#barriere" class="hover:text-gray-400"
+              >Retour à l'accueil</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="h-screen bg-gradient-to-br from-gray-800 to-gray-600 text-gray-100 flex items-center justify-center text-center">
-        <div data-aos="fade-up">
-            <h2 class="text-4xl md:text-6xl font-bold mb-6">Projet de Barrière Automatique</h2>
-            <p class="text-lg md:text-2xl mb-6">Développement d'un système automatisé pour le contrôle d'accès avec gestion électronique et logicielle.</p>
-        </div>
-    </section>  
+    <section
+      id="home"
+      class="h-screen bg-gradient-to-br from-gray-800 to-gray-600 text-gray-100 flex items-center justify-center text-center"
+    >
+      <div data-aos="fade-up">
+        <h2 class="text-4xl md:text-6xl font-bold mb-6">
+          Projet de Barrière Automatique
+        </h2>
+        <p class="text-lg md:text-2xl mb-6">
+          Développement d'un système automatisé pour le contrôle d'accès avec
+          gestion électronique et logicielle.
+        </p>
+      </div>
+    </section>
 
     <!-- Description du Projet -->
     <section class="py-20 bg-gray-900" id="projet-aspirateur">
-        <div class="max-w-7xl mx-auto text-center" data-aos="fade-up">
-            <h2 class="text-3xl font-bold text-gray-100">Présentation du Projet</h2>
-            <p class="text-gray-400 mt-4 mb-12">Voici les détails techniques et les étapes de réalisation du projet de barrière automatique.</p>
+      <div class="max-w-7xl mx-auto text-center" data-aos="fade-up">
+        <h2 class="text-3xl font-bold text-gray-100">Présentation du Projet</h2>
+        <p class="text-gray-400 mt-4 mb-12">
+          Voici les détails techniques et les étapes de réalisation du projet de
+          barrière automatique.
+        </p>
+      </div>
+
+      <div class="max-w-5xl mx-auto space-y-10 text-left">
+        <div class="flex items-center space-x-4">
+          <span class="text-3xl">🚧</span>
+          <h3 class="text-2xl font-semibold text-gray-100">
+            Réalisation du projet
+          </h3>
+        </div>
+        <p class="text-gray-400">
+          Le projet de barrière automatique a été conçu pour automatiser le
+          contrôle d'accès à une zone sécurisée. Le cœur du système repose sur
+          un
+          <strong
+            ><a
+              href="https://fr.wikipedia.org/wiki/Automate_programmable_industriel"
+              target="_blank"
+              class="text-blue-400"
+              >automate Zelio</a
+            ></strong
+          >, un type d'<a
+            href="https://fr.wikipedia.org/wiki/Automate_programmable_industriel"
+            target="_blank"
+            class="text-blue-400"
+            >automate programmable industriel (API)</a
+          >, qui gère les commandes de montée et descente de la barrière en
+          fonction des signaux envoyés par des capteurs (infrarouges ou à
+          ultrasons) détectant la présence d'un véhicule. Les capteurs
+          infrarouges ou à ultrasons sont utilisés pour détecter la distance et
+          la présence d'obstacles, garantissant ainsi une ouverture ou une
+          fermeture précise de la barrière en toute sécurité. <br /><br />
+          Un autre aspect clé de ce projet est la mise en place d'un
+          <strong
+            ><a
+              href="https://fr.wikipedia.org/wiki/Syst%C3%A8me_de_contr%C3%B4le_de_processus#Automates_programmables_industriels"
+              target="_blank"
+              class="text-blue-400"
+              >système de contrôle</a
+            ></strong
+          >, qui assure une gestion électronique fiable et sécurisée. Ce système
+          peut également inclure des mécanismes d'interruption d'urgence pour
+          éviter des accidents et garantir la sécurité des usagers.
+        </p>
+
+        <!-- Image Zelio (remplacez l'URL par votre chemin local) -->
+        <div class="text-center">
+          <img
+            src="images/zelio_barriere.jpg"
+            alt="Automate Zelio"
+            class="mx-auto mt-8"
+            style="max-width: 500px"
+          />
         </div>
 
-        <div class="max-w-5xl mx-auto space-y-10 text-left">
-            <div class="flex items-center space-x-4">
-                <span class="text-3xl">🚧</span>
-                <h3 class="text-2xl font-semibold text-gray-100">Réalisation du projet</h3>
-            </div>
-            <p class="text-gray-400">
-                Le projet de barrière automatique a été conçu pour automatiser le contrôle d'accès à une zone sécurisée. Le cœur du système repose sur un <strong><a href="https://fr.wikipedia.org/wiki/Automate_programmable_industriel" target="_blank" class="text-blue-400">automate Zelio</a></strong>, un type d'<a href="https://fr.wikipedia.org/wiki/Automate_programmable_industriel" target="_blank" class="text-blue-400">automate programmable industriel (API)</a>, qui gère les commandes de montée et descente de la barrière en fonction des signaux envoyés par des capteurs (infrarouges ou à ultrasons) détectant la présence d'un véhicule. Les capteurs infrarouges ou à ultrasons sont utilisés pour détecter la distance et la présence d'obstacles, garantissant ainsi une ouverture ou une fermeture précise de la barrière en toute sécurité.
-                <br><br>
-                Un autre aspect clé de ce projet est la mise en place d'un <strong><a href="https://fr.wikipedia.org/wiki/Syst%C3%A8me_de_contr%C3%B4le_de_processus#Automates_programmables_industriels" target="_blank" class="text-blue-400">système de contrôle</a></strong>, qui assure une gestion électronique fiable et sécurisée. Ce système peut également inclure des mécanismes d'interruption d'urgence pour éviter des accidents et garantir la sécurité des usagers.
-            </p>
-
-            <!-- Image Zelio (remplacez l'URL par votre chemin local) -->
-            <div class="text-center">
-                <img src="images/zelio_barriere.jpg" alt="Automate Zelio" class="mx-auto mt-8" style="max-width: 500px;">
-            </div>
-
-            <div class="flex items-center space-x-4">
-                <span class="text-3xl">📋</span>
-                <h3 class="text-2xl font-semibold text-gray-100">Conception du Grafcet</h3>
-            </div>
-            <p class="text-gray-400">
-                Une étape essentielle de ce projet a été la conception du <strong><a href="https://fr.wikipedia.org/wiki/GRAFCET" target="_blank" class="text-blue-400">Grafcet</a></strong>, un diagramme qui décrit le fonctionnement logique de la barrière. Le Grafcet permet de représenter visuellement les étapes et les transitions du système, garantissant une exécution correcte des processus. Ce diagramme assure que toutes les transitions entre les états (montée, descente, arrêt) sont correctement synchronisées avec les signaux des capteurs et les commandes de l'utilisateur, permettant ainsi de mieux comprendre la logique de fonctionnement du système automatisé.
-                <br><br>
-                Le Grafcet est un outil largement utilisé dans l'automatisation industrielle pour la gestion des processus. Il est basé sur un ensemble de règles logiques et de séquences d'actions, ce qui facilite la compréhension et l'implémentation des systèmes de contrôle complexe.
-            </p>
-
-            <!-- Image Grafcet (remplacez l'URL par votre chemin local) -->
-
-            <div class="flex items-center space-x-4">
-                <span class="text-3xl">⚙️</span>
-                <h3 class="text-2xl font-semibold text-gray-100">Montage et tests</h3>
-            </div>
-            <p class="text-gray-400">
-                Le montage physique de la barrière a nécessité la création d'une maquette fonctionnelle avec des composants robotiques, y compris un moteur contrôlant le mouvement de la barrière. Le moteur est relié à l'automate Zelio pour activer les mouvements d'ouverture et de fermeture de la barrière. <strong><a href="https://fr.wikipedia.org/wiki/Moteur_%C3%A9lectrique" target="_blank" class="text-blue-400">Les moteurs électriques</a></strong> utilisés dans ce type de projet sont cruciaux pour assurer un mouvement fluide et précis de la barrière. Des tests ont été effectués pour valider la robustesse du système, notamment sa capacité à réagir rapidement à des anomalies comme une interruption brusque ou la détection d'un obstacle pendant le mouvement.
-                <br><br>
-                Ces tests sont essentiels pour s'assurer de la sécurité du système et de son bon fonctionnement sur le long terme. Chaque composant a été soigneusement intégré pour garantir une fiabilité optimale dans toutes les situations possibles.
-            </p>
-
-            <!-- Image Maquette (remplacez l'URL par votre chemin local) -->
-
-            <div class="flex items-center space-x-4">
-                <span class="text-3xl">🔧</span>
-                <h3 class="text-2xl font-semibold text-gray-100">Défis rencontrés et solutions</h3>
-            </div>
-            <p class="text-gray-400">
-                L'un des principaux défis techniques a été d'assurer une synchronisation parfaite entre les capteurs et les commandes de l'automate. La <strong><a href="https://fr.wikipedia.org/wiki/Capteur" target="_blank" class="text-blue-400">synchronicité des capteurs</a></strong> est primordiale pour garantir une détection correcte des obstacles et une action précise de la barrière. Cela a nécessité des ajustements fins dans le programme de l'automate pour éviter des comportements erratiques ou non sécurisés.
-                <br><br>
-                De plus, l'intégration des capteurs infrarouges a demandé une calibration minutieuse pour éviter les fausses détections dues aux variations de lumière ambiante. Un défi supplémentaire a été de garantir que la barrière s'ouvre ou se ferme de manière fiable en toutes conditions, ce qui a été résolu grâce à des tests approfondis et des ajustements continus du système.
-            </p>
-
+        <div class="flex items-center space-x-4">
+          <span class="text-3xl">📋</span>
+          <h3 class="text-2xl font-semibold text-gray-100">
+            Conception du Grafcet
+          </h3>
         </div>
+        <p class="text-gray-400">
+          Une étape essentielle de ce projet a été la conception du
+          <strong
+            ><a
+              href="https://fr.wikipedia.org/wiki/GRAFCET"
+              target="_blank"
+              class="text-blue-400"
+              >Grafcet</a
+            ></strong
+          >, un diagramme qui décrit le fonctionnement logique de la barrière.
+          Le Grafcet permet de représenter visuellement les étapes et les
+          transitions du système, garantissant une exécution correcte des
+          processus. Ce diagramme assure que toutes les transitions entre les
+          états (montée, descente, arrêt) sont correctement synchronisées avec
+          les signaux des capteurs et les commandes de l'utilisateur, permettant
+          ainsi de mieux comprendre la logique de fonctionnement du système
+          automatisé. <br /><br />
+          Le Grafcet est un outil largement utilisé dans l'automatisation
+          industrielle pour la gestion des processus. Il est basé sur un
+          ensemble de règles logiques et de séquences d'actions, ce qui facilite
+          la compréhension et l'implémentation des systèmes de contrôle
+          complexe.
+        </p>
+
+        <!-- Image Grafcet (remplacez l'URL par votre chemin local) -->
+
+        <div class="flex items-center space-x-4">
+          <span class="text-3xl">⚙️</span>
+          <h3 class="text-2xl font-semibold text-gray-100">Montage et tests</h3>
+        </div>
+        <p class="text-gray-400">
+          Le montage physique de la barrière a nécessité la création d'une
+          maquette fonctionnelle avec des composants robotiques, y compris un
+          moteur contrôlant le mouvement de la barrière. Le moteur est relié à
+          l'automate Zelio pour activer les mouvements d'ouverture et de
+          fermeture de la barrière.
+          <strong
+            ><a
+              href="https://fr.wikipedia.org/wiki/Moteur_%C3%A9lectrique"
+              target="_blank"
+              class="text-blue-400"
+              >Les moteurs électriques</a
+            ></strong
+          >
+          utilisés dans ce type de projet sont cruciaux pour assurer un
+          mouvement fluide et précis de la barrière. Des tests ont été effectués
+          pour valider la robustesse du système, notamment sa capacité à réagir
+          rapidement à des anomalies comme une interruption brusque ou la
+          détection d'un obstacle pendant le mouvement. <br /><br />
+          Ces tests sont essentiels pour s'assurer de la sécurité du système et
+          de son bon fonctionnement sur le long terme. Chaque composant a été
+          soigneusement intégré pour garantir une fiabilité optimale dans toutes
+          les situations possibles.
+        </p>
+
+        <!-- Image Maquette (remplacez l'URL par votre chemin local) -->
+
+        <div class="flex items-center space-x-4">
+          <span class="text-3xl">🔧</span>
+          <h3 class="text-2xl font-semibold text-gray-100">
+            Défis rencontrés et solutions
+          </h3>
+        </div>
+        <p class="text-gray-400">
+          L'un des principaux défis techniques a été d'assurer une
+          synchronisation parfaite entre les capteurs et les commandes de
+          l'automate. La
+          <strong
+            ><a
+              href="https://fr.wikipedia.org/wiki/Capteur"
+              target="_blank"
+              class="text-blue-400"
+              >synchronicité des capteurs</a
+            ></strong
+          >
+          est primordiale pour garantir une détection correcte des obstacles et
+          une action précise de la barrière. Cela a nécessité des ajustements
+          fins dans le programme de l'automate pour éviter des comportements
+          erratiques ou non sécurisés. <br /><br />
+          De plus, l'intégration des capteurs infrarouges a demandé une
+          calibration minutieuse pour éviter les fausses détections dues aux
+          variations de lumière ambiante. Un défi supplémentaire a été de
+          garantir que la barrière s'ouvre ou se ferme de manière fiable en
+          toutes conditions, ce qui a été résolu grâce à des tests approfondis
+          et des ajustements continus du système.
+        </p>
+      </div>
     </section>
 
     <!-- Compétences utilisées dans le projet -->
     <section class="py-20 bg-gray-800" id="competences">
-        <div class="max-w-7xl mx-auto text-center" data-aos="fade-up">
-            <h2 class="text-3xl font-bold text-gray-100">Compétences utilisées dans le projet</h2>
-            <p class="text-gray-400 mt-4 mb-12">Voici les principales compétences développées et utilisées lors de la réalisation de ce projet.</p>
+      <div class="max-w-7xl mx-auto text-center" data-aos="fade-up">
+        <h2 class="text-3xl font-bold text-gray-100">
+          Compétences utilisées dans le projet
+        </h2>
+        <p class="text-gray-400 mt-4 mb-12">
+          Voici les principales compétences développées et utilisées lors de la
+          réalisation de ce projet.
+        </p>
+      </div>
+
+      <div class="max-w-5xl mx-auto text-left">
+        <div class="space-y-8">
+          <div class="flex items-center space-x-4">
+            <span class="text-3xl">🖥️</span>
+            <h3 class="text-2xl font-semibold text-gray-100">
+              Programmation d'automates
+            </h3>
+          </div>
+          <p class="text-gray-400">
+            La programmation de l'<a
+              href="https://fr.wikipedia.org/wiki/Automate_programmable_industriel"
+              target="_blank"
+              class="text-blue-400"
+              >automate Zelio</a
+            >
+            a constitué un élément central de ce projet. En utilisant un langage
+            de programmation <strong>Ladder</strong>, j'ai pu développer une
+            logique fiable pour le fonctionnement automatique de la barrière. Le
+            <a
+              href="https://fr.wikipedia.org/wiki/Ladder_(langage)"
+              target="_blank"
+              class="text-blue-400"
+              >Ladder</a
+            >
+            est un langage graphique souvent utilisé pour programmer les
+            automates industriels, en particulier dans des systèmes comme
+            celui-ci qui nécessitent des interventions de sécurité et une
+            logique simple et fiable.
+          </p>
+
+          <div class="flex items-center space-x-4">
+            <span class="text-3xl">📐</span>
+            <h3 class="text-2xl font-semibold text-gray-100">
+              Conception et schématisation
+            </h3>
+          </div>
+          <p class="text-gray-400">
+            La conception des schémas électriques et du Grafcet a permis de
+            structurer et de documenter le projet. Ces outils ont été essentiels
+            pour garantir que toutes les étapes de la réalisation soient
+            alignées et compréhensibles pour l'équipe. Les schémas électriques
+            sont un élément clé pour visualiser et résoudre les problèmes
+            potentiels pendant le montage et les tests.
+          </p>
+
+          <div class="flex items-center space-x-4">
+            <span class="text-3xl">🔍</span>
+            <h3 class="text-2xl font-semibold text-gray-100">
+              Tests et optimisation
+            </h3>
+          </div>
+          <p class="text-gray-400">
+            Des tests rigoureux ont été effectués pour valider le bon
+            fonctionnement de la barrière. L'optimisation des capteurs et des
+            circuits de commande a permis de garantir la stabilité et la
+            sécurité du système sur le long terme. Ces tests ont permis
+            d'identifier et de résoudre les défis techniques en cours de
+            développement, assurant ainsi un système opérationnel fiable.
+          </p>
         </div>
-
-        <div class="max-w-5xl mx-auto text-left">
-            <div class="space-y-8">
-                <div class="flex items-center space-x-4">
-                    <span class="text-3xl">🖥️</span>
-                    <h3 class="text-2xl font-semibold text-gray-100">Programmation d'automates</h3>
-                </div>
-                <p class="text-gray-400">
-                    La programmation de l'<a href="https://fr.wikipedia.org/wiki/Automate_programmable_industriel" target="_blank" class="text-blue-400">automate Zelio</a> a constitué un élément central de ce projet. En utilisant un langage de programmation <strong>Ladder</strong>, j'ai pu développer une logique fiable pour le fonctionnement automatique de la barrière. Le <a href="https://fr.wikipedia.org/wiki/Ladder_(langage)" target="_blank" class="text-blue-400">Ladder</a> est un langage graphique souvent utilisé pour programmer les automates industriels, en particulier dans des systèmes comme celui-ci qui nécessitent des interventions de sécurité et une logique simple et fiable.
-                </p>
-
-                <div class="flex items-center space-x-4">
-                    <span class="text-3xl">📐</span>
-                    <h3 class="text-2xl font-semibold text-gray-100">Conception et schématisation</h3>
-                </div>
-                <p class="text-gray-400">
-                    La conception des schémas électriques et du Grafcet a permis de structurer et de documenter le projet. Ces outils ont été essentiels pour garantir que toutes les étapes de la réalisation soient alignées et compréhensibles pour l'équipe. Les schémas électriques sont un élément clé pour visualiser et résoudre les problèmes potentiels pendant le montage et les tests.
-                </p>
-
-                <div class="flex items-center space-x-4">
-                    <span class="text-3xl">🔍</span>
-                    <h3 class="text-2xl font-semibold text-gray-100">Tests et optimisation</h3>
-                </div>
-                <p class="text-gray-400">
-                    Des tests rigoureux ont été effectués pour valider le bon fonctionnement de la barrière. L'optimisation des capteurs et des circuits de commande a permis de garantir la stabilité et la sécurité du système sur le long terme. Ces tests ont permis d'identifier et de résoudre les défis techniques en cours de développement, assurant ainsi un système opérationnel fiable.
-                </p>
-            </div>
-        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="bg-gray-700 text-gray-200 text-center py-6">
-        <p>&copy; 2024 Olivier. Tous droits réservés.</p>
+      <p>&copy; 2024 Olivier. Tous droits réservés.</p>
     </footer>
 
     <!-- Import AOS Script -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({
-            duration: 1000,
-            once: true,
-        });
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
     </script>
-</body>
+  </body>
 </html>

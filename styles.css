@@ -1,40 +1,40 @@
 body {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Ajouter des couleurs personnalisées */
 .bg-blue-600 {
-    background-color: #2563eb;
+  background-color: #2563eb;
 }
 
 .bg-blue-200 {
-    background-color: #bfdbfe;
+  background-color: #bfdbfe;
 }
 
 .bg-gray-200 {
-    background-color: #e5e7eb;
+  background-color: #e5e7eb;
 }
 
 .bg-yellow-400 {
-    background-color: #fbbf24;
+  background-color: #fbbf24;
 }
 
 .bg-yellow-500 {
-    background-color: #f59e0b;
+  background-color: #f59e0b;
 }
 
 .text-gray-900 {
-    color: #111827;
+  color: #111827;
 }
 
 .text-gray-700 {
-    color: #4b5563;
+  color: #4b5563;
 }
 
 .text-gray-600 {
-    color: #6b7280;
+  color: #6b7280;
 }
 
 .text-blue-600 {
-    color: #2563eb;
+  color: #2563eb;
 }
